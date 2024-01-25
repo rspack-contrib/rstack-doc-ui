@@ -4,12 +4,12 @@ import { PopoverContent } from './components/PopoverContent';
 import navConfig from './nav-config.json';
 import { getLang, type Lang, type NavConfig } from './utils';
 
-export interface WebInfraNavIconProps {
+export interface RsfamilyNavIconProps {
   lang?: Lang;
   trigger?: 'hover' | 'focus' | 'click';
 }
 
-export const WebInfraNavIcon = (props: WebInfraNavIconProps = {}) => {
+export const RsfamilyNavIcon = (props: RsfamilyNavIconProps = {}) => {
   const lang = props.lang || getLang();
 
   return (
