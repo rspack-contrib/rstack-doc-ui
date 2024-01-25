@@ -1,4 +1,8 @@
-# Modern.js Package
+# Rsfamily Nav Icon
+
+The nav icon component for Rsfamily.
+
+![image](https://github.com/rspack-contrib/rsfamily-nav-icon/assets/7237365/783eb582-e780-4134-8666-69d154b562f5)
 
 ## Setup
 
@@ -13,25 +17,13 @@ pnpm run install
 Run and debug the module:
 
 ```bash
-pnpm run dev
-```
-
-Run test cases:
-
-```bash
-pnpm run test
+pnpm run storybook
 ```
 
 Build the module for production:
 
 ```bash
 pnpm run build
-```
-
-Enable optional features:
-
-```bash
-pnpm run new
 ```
 
 Other commands:
