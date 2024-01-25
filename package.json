@@ -1,10 +1,12 @@
 {
-  "name": "nav-icon",
+  "name": "rsfamily-nav-icon",
   "version": "0.1.0",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
   "scripts": {
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006",
     "prepare": "modern build && husky install",
     "dev": "modern dev",
     "build": "modern build",
@@ -20,28 +22,23 @@
     "new": "modern new",
     "upgrade": "modern upgrade"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
-    ]
+  "dependencies": {
+    "antd": "^5.13.2"
   },
-  "eslintIgnore": [
-    "node_modules/",
-    "dist/"
-  ],
-  "dependencies": {},
-  "peerDependencies": {},
   "devDependencies": {
+    "@modern-js/builder-rspack-provider": "2.46.1",
     "@modern-js/module-tools": "2.46.1",
-    "@modern-js/eslint-config": "2.46.1",
-    "typescript": "~5.0.4",
+    "@modern-js/storybook": "2.46.1",
+    "@storybook/addon-essentials": "7.6.10",
     "@types/node": "~16.11.7",
-    "rimraf": "~3.0.2",
-    "lint-staged": "~13.1.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "~3.0.2",
+    "typescript": "~5.0.4"
   },
-  "sideEffects": [],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

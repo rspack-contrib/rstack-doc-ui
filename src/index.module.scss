@@ -1,0 +1,70 @@
+.root {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  margin-right: 20px;
+
+  &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    background-color: var(--rp-c-divider-light);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.popover {
+  z-index: 999;
+
+  :global(.ant-popover-inner) {
+    box-sizing: border-box;
+    width: 552px;
+    padding: 24px 28px 14px;
+    border-radius: 24px;
+    background-color: var(--rp-c-bg);
+    font-family: 'Inter';
+
+    :global(.dark) & {
+      background-color: var(--rp-c-bg-soft);
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--rp-c-bg-mute);
+  }
+}
+
+.loadFont {
+  font-family: 'Inter';
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/Inter-Regular.woff2')
+    format('woff2');
+}
