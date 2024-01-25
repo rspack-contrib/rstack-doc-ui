@@ -1,9 +1,9 @@
 {
   "name": "rsfamily-nav-icon",
   "version": "1.0.0",
-  "types": "./dist/types/index.d.ts",
-  "main": "./dist/lib/index.js",
-  "module": "./dist/es/index.js",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "scripts": {
     "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006",
@@ -22,9 +22,6 @@
     "new": "modern new",
     "upgrade": "modern upgrade"
   },
-  "dependencies": {
-    "antd": "^5.13.2"
-  },
   "devDependencies": {
     "@modern-js/builder-rspack-provider": "2.46.1",
     "@modern-js/module-tools": "2.46.1",
@@ -33,6 +30,7 @@
     "@types/node": "~16.11.7",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "antd": "^5.13.2",
     "prettier": "~2.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

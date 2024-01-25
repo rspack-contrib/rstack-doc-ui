@@ -1,4 +1,5 @@
-import { RsfamilyNavIcon } from '../dist/es/index';
+import { RsfamilyNavIcon } from '../dist';
+import '../dist/index.css';
 import './index.scss';
 
 export const NavIcon = () => (

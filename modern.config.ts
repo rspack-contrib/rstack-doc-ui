@@ -6,15 +6,19 @@ export default defineConfig({
     {
       format: 'esm',
       target: 'es6',
-      buildType: 'bundleless',
-      outDir: './dist/es',
+      buildType: 'bundle',
+      outDir: './dist',
+      autoExternal: false,
+      platform: 'browser',
+      dts: false,
+      externals: ['react', 'react-dom', 'react/jsx-runtime'],
       copy: {
         patterns: [{ from: './nav-config.json' }],
       },
     },
     {
       buildType: 'bundleless',
-      outDir: './dist/types',
+      outDir: './dist',
       dts: {
         only: true,
       },
