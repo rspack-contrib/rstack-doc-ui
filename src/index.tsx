@@ -2,7 +2,7 @@ import style from './index.module.scss';
 import Popover from 'antd/es/popover';
 import { PopoverContent } from './components/PopoverContent';
 import navConfig from './nav-config.json';
-import { getLang, type Lang, type NavConfig } from './utils';
+import { getLang, type Lang } from './utils';
 
 export interface RsfamilyNavIconProps {
   lang?: Lang;
@@ -14,7 +14,6 @@ export const RsfamilyNavIcon = (props: RsfamilyNavIconProps = {}) => {
 
   return (
     <div className={style.root}>
-      <div className={style.loadFont}>This div is used to preload the font</div>
       <Popover
         arrow={false}
         trigger={props.trigger}
