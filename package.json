@@ -23,9 +23,8 @@
     "upgrade": "modern upgrade"
   },
   "devDependencies": {
-    "@modern-js/builder-rspack-provider": "2.46.1",
-    "@modern-js/module-tools": "2.46.1",
-    "@modern-js/storybook": "2.46.1",
+    "@modern-js/module-tools": "2.48.3",
+    "@modern-js/storybook": "2.48.3",
     "@storybook/addon-essentials": "7.6.10",
     "@types/node": "~16.11.7",
     "@types/react": "^18.2.48",
