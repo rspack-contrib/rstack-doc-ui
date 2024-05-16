@@ -4,6 +4,7 @@
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
+  "license": "MIT",
   "scripts": {
     "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006",
