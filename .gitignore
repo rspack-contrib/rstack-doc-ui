@@ -6,6 +6,7 @@
 .env.*.local
 .history
 *.log*
+storybook-static
 
 node_modules/
 .yarn-integrity
