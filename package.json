@@ -1,6 +1,6 @@
 {
   "name": "rsfamily-doc-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "packageManager": "pnpm@9.5.0",
@@ -8,6 +8,9 @@
     "./nav-icon": "./dist/nav-icon/index.js",
     "./benchmark": "./dist/benchmark/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "pnpm run storybook",
     "build-storybook": "storybook build",
