@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import styles from './ProgressBar.module.scss';
 
 export function formatTime(time: number, totalTime: number) {
@@ -14,10 +13,12 @@ export function ProgressBar({
   value,
   max,
   desc,
+  inView,
 }: {
   value: number;
   max: number;
   desc: string;
+  inView: boolean;
 }) {
   const [elapsedTime, setElapsedTime] = useState(0);
   const TOTAL_TIME = value * 1000;
@@ -25,12 +26,11 @@ export function ProgressBar({
     initial: { width: 0 },
     animate: { width: `${(value / max) * 100}%` },
   };
-  const { ref, inView } = useInView();
 
   const formattedTime = formatTime(elapsedTime, TOTAL_TIME);
   return (
     <div className={styles.container}>
-      <div ref={ref} className={styles.innerContainer}>
+      <div className={styles.innerContainer}>
         {inView ? (
           <motion.div
             className={styles.bar}
