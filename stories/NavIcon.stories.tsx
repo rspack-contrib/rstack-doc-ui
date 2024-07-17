@@ -1,5 +1,4 @@
 import { NavIcon } from '../dist/nav-icon';
-import '../dist/nav-icon/index.css';
 import './index.scss';
 
 export const NavIconStory = () => (

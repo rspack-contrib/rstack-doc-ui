@@ -1,5 +1,4 @@
 import { Benchmark } from '../dist/benchmark';
-import '../dist/benchmark/index.css';
 import './index.scss';
 
 // Benchmark data for different cases

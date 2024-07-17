@@ -12,6 +12,9 @@ const sharedConfig: PartialBaseBuildConfig = {
   platform: 'browser',
   dts: false,
   externals: ['react', 'react-dom', 'react/jsx-runtime', 'framer-motion'],
+  banner: {
+    js: `import './index.css';`,
+  },
 };
 
 export default defineConfig({
