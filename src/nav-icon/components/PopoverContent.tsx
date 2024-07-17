@@ -20,6 +20,7 @@ export const PopoverContent = ({
         <img
           src="https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/web-infra-logo.jpg"
           className={style.logo}
+          alt="web-infra-logo"
         />
         <div className={style.titleText}>Web Infra</div>
       </a>

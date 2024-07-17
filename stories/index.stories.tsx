@@ -1,14 +1,14 @@
-import { RsfamilyNavIcon } from '../dist';
-import '../dist/index.css';
+import { NavIcon } from '../dist/nav-icon';
+import '../dist/nav-icon/index.css';
 import './index.scss';
 
-export const NavIcon = () => (
+export const NavIconStory = () => (
   <div style={{ margin: 20 }}>
     <h2>English</h2>
-    <RsfamilyNavIcon lang="en" trigger="click" />
+    <NavIcon lang="en" trigger="click" />
 
     <h2>中文</h2>
-    <RsfamilyNavIcon lang="zh" trigger="click" />
+    <NavIcon lang="zh" trigger="click" />
   </div>
 );
 

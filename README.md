@@ -4,7 +4,7 @@ UI components for the Rspack family websites.
 
 ## Example
 
-`RsfamilyNavIcon` component:
+`NavIcon` component:
 
 ![image](https://github.com/rspack-contrib/rsfamily-doc-ui/assets/7237365/783eb582-e780-4134-8666-69d154b562f5)
 

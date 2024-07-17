@@ -1,20 +1,26 @@
-import { moduleTools, defineConfig } from '@modern-js/module-tools';
+import {
+  moduleTools,
+  defineConfig,
+  type PartialBaseBuildConfig,
+} from '@modern-js/module-tools';
+
+const sharedConfig: PartialBaseBuildConfig = {
+  format: 'esm',
+  target: 'es6',
+  buildType: 'bundle',
+  autoExternal: false,
+  platform: 'browser',
+  dts: false,
+  externals: ['react', 'react-dom', 'react/jsx-runtime'],
+};
 
 export default defineConfig({
   plugins: [moduleTools()],
   buildConfig: [
     {
-      format: 'esm',
-      target: 'es6',
-      buildType: 'bundle',
-      outDir: './dist',
-      autoExternal: false,
-      platform: 'browser',
-      dts: false,
-      externals: ['react', 'react-dom', 'react/jsx-runtime'],
-      copy: {
-        patterns: [{ from: './nav-config.json' }],
-      },
+      ...sharedConfig,
+      input: ['./src/nav-icon/index.tsx'],
+      outDir: './dist/nav-icon',
     },
     {
       buildType: 'bundleless',
