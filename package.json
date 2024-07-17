@@ -15,21 +15,22 @@
     "build:watch": "modern build -w"
   },
   "devDependencies": {
-    "@modern-js/module-tools": "2.48.3",
-    "@rsbuild/core": "^0.6.15",
-    "@rsbuild/plugin-react": "^0.6.15",
+    "@modern-js/module-tools": "^2.55.0",
+    "@rsbuild/core": "1.0.1-beta.1",
+    "@rsbuild/plugin-react": "1.0.1-beta.1",
+    "@rsbuild/plugin-sass": "1.0.1-beta.1",
     "@storybook/addon-essentials": "^8.2.4",
-    "@types/node": "~16.11.68",
+    "@types/node": "~16.18.102",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "antd": "^5.19.2",
-    "prettier": "~2.8.8",
+    "prettier": "~3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "rimraf": "~3.0.2",
+    "rimraf": "~6.0.1",
     "storybook": "^8.2.4",
-    "storybook-react-rsbuild": "^0.0.5",
-    "typescript": "~5.0.4"
+    "storybook-react-rsbuild": "^0.0.7",
+    "typescript": "~5.5.3"
   },
   "publishConfig": {
     "access": "public",
