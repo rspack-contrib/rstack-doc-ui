@@ -1,5 +1,5 @@
 {
-  "name": "rsfamily-nav-icon",
+  "name": "rsfamily-doc-ui",
   "version": "1.0.3",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
@@ -13,16 +13,7 @@
     "dev": "modern dev",
     "build": "modern build",
     "build:watch": "modern build -w",
-    "reset": "rimraf ./**/node_modules",
-    "lint": "modern lint",
-    "change": "modern change",
-    "bump": "modern bump",
-    "pre": "modern pre",
-    "change-status": "modern change-status",
-    "gen-release-note": "modern gen-release-note",
-    "release": "modern release",
-    "new": "modern new",
-    "upgrade": "modern upgrade"
+    "reset": "rimraf ./**/node_modules"
   },
   "devDependencies": {
     "@modern-js/module-tools": "2.48.3",
