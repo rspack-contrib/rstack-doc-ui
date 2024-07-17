@@ -11,7 +11,7 @@ const sharedConfig: PartialBaseBuildConfig = {
   autoExternal: false,
   platform: 'browser',
   dts: false,
-  externals: ['react', 'react-dom', 'react/jsx-runtime'],
+  externals: ['react', 'react-dom', 'react/jsx-runtime', 'framer-motion'],
 };
 
 export default defineConfig({
@@ -21,6 +21,11 @@ export default defineConfig({
       ...sharedConfig,
       input: ['./src/nav-icon/index.tsx'],
       outDir: './dist/nav-icon',
+    },
+    {
+      ...sharedConfig,
+      input: ['./src/benchmark/index.tsx'],
+      outDir: './dist/benchmark',
     },
     {
       buildType: 'bundleless',
