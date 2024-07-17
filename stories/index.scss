@@ -6,4 +6,11 @@
   --rp-c-bg-mute: #f1f1f1;
   --rp-c-divider-light: rgba(60, 60, 60, 0.29);
   --rp-c-gray-light-5: #f2f2f2;
+  --rp-font-family-base: 'Open Sans', 'Inter var experimental', 'Inter var',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: var(--rp-font-family-base);
 }
