@@ -7,14 +7,14 @@
         "name": "Rspack",
         "desc": "基于 Rust 的打包工具",
         "descEn": "Rust-based web bundler",
-        "logo": "https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/logo-200x200.png",
+        "logo": "https://assets.rspack.dev/rspack/rspack-logo.svg",
         "url": "https://rspack.dev"
       },
       {
         "name": "Rsbuild",
         "desc": "开箱即用的构建工具",
         "descEn": "Out-of-the-box build tool",
-        "logo": "https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/rsbuild/rsbuild-logo-1013.png",
+        "logo": "https://assets.rspack.dev/rsbuild/rsbuild-logo.svg",
         "url": "https://rsbuild.dev"
       },
       {
@@ -22,7 +22,7 @@
         "desc": "静态站点生成器",
         "descEn": "Static site generator",
         "logoScale": 1.1,
-        "logo": "https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/rspress-logo-0125.png",
+        "logo": "https://assets.rspack.dev/rspress/rspress-logo-480x480.png",
         "url": "https://rspress.dev"
       },
       {
@@ -30,7 +30,7 @@
         "desc": "一站式构建分析工具",
         "descEn": "Build analyzer for Rspack",
         "logoScale": 0.95,
-        "logo": "https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/rsdoctor-logo.png",
+        "logo": "https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png",
         "url": "https://rsdoctor.dev"
       }
     ]
