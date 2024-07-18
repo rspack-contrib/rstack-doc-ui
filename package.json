@@ -1,6 +1,6 @@
 {
   "name": "rsfamily-doc-ui",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "types": "./dist/index.d.ts",
   "license": "MIT",
   "packageManager": "pnpm@9.5.0",
