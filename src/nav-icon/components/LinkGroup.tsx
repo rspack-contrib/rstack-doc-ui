@@ -1,5 +1,5 @@
-import { Lang } from '../utils';
-import { Link, LinkInfo } from './Link';
+import type { Lang } from '../utils';
+import { Link, type LinkInfo } from './Link';
 import style from './LinkGroup.module.scss';
 
 export const LinkGroup = (props: {
@@ -13,9 +13,6 @@ export const LinkGroup = (props: {
   ));
   return (
     <div className={style.root}>
-      {/* <h2 className={style.title}>
-        {props.lang === 'en' ? props.titleEn : props.title}
-      </h2> */}
       <div className={style.links}>{Links}</div>
     </div>
   );

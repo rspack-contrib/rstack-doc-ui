@@ -31,6 +31,11 @@ export default defineConfig({
       outDir: './dist/benchmark',
     },
     {
+      ...sharedConfig,
+      input: ['./src/tool-stack/index.tsx'],
+      outDir: './dist/tool-stack',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

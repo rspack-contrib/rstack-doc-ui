@@ -1,0 +1,112 @@
+.root {
+  columns: 2;
+  gap: 32px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 72rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapperLink {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 220px;
+  border: 1px solid var(--rp-home-feature-bg);
+  margin-bottom: 32px;
+  padding: 32px 32px 32px 38px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--rp-home-feature-bg);
+  box-sizing: border-box;
+
+  transition:
+    border-color,
+    transform 0.15s ease-out;
+
+  &:hover {
+    border: 1px solid var(--rp-c-brand);
+  }
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(80px);
+  opacity: 0.2;
+  background: conic-gradient(
+    from 120deg at 50% 50%,
+    rgba(255, 206, 88, 0.45) -4.74deg,
+    rgba(255, 255, 255, 0) 46.65deg,
+    rgba(255, 255, 255, 0) 65.18deg,
+    rgba(255, 255, 255, 0) 126.05deg,
+    rgba(255, 206, 88, 0.1) 142.43deg,
+    rgba(255, 206, 88, 0.2) 163.82deg,
+    rgba(255, 255, 255, 0) 192.78deg,
+    rgba(255, 255, 255, 0) 305.58deg,
+    rgba(255, 206, 88, 0.45) 355.26deg,
+    rgba(255, 255, 255, 0) 406.65deg
+  );
+}
+
+.logo {
+  width: 128px;
+}
+
+.body {
+  margin-left: 28px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  color: var(--rp-c-text-1);
+}
+
+.desc {
+  color: var(--rp-c-text-2);
+  font-size: 14px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 960px) {
+  .root {
+    columns: 1;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px 20px 20px 26px;
+    height: 168px;
+  }
+
+  .logo {
+    width: 96px;
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .desc {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}

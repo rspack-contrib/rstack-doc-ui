@@ -6,7 +6,8 @@
   "packageManager": "pnpm@9.5.0",
   "exports": {
     "./nav-icon": "./dist/nav-icon/index.js",
-    "./benchmark": "./dist/benchmark/index.js"
+    "./benchmark": "./dist/benchmark/index.js",
+    "./tool-stack": "./dist/tool-stack/index.js"
   },
   "files": [
     "dist"
