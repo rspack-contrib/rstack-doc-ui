@@ -9,6 +9,10 @@
     "./benchmark": "./dist/benchmark/index.js",
     "./tool-stack": "./dist/tool-stack/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rspack-contrib/rstack-doc-ui"
+  },
   "files": [
     "dist"
   ],
