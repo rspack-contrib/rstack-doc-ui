@@ -1,5 +1,5 @@
 {
-  "name": "rsfamily-doc-ui",
+  "name": "@rstack-dev/doc-ui",
   "version": "1.1.2",
   "types": "./dist/index.d.ts",
   "license": "MIT",

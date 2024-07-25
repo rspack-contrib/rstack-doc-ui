@@ -1,4 +1,4 @@
-# Rsfamily Doc UI
+# Rstack Doc UI
 
 UI components for the Rspack family websites.
 
