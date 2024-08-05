@@ -18,6 +18,13 @@
         "url": "https://rsbuild.dev"
       },
       {
+        "name": "Rslib",
+        "desc": "库构建工具",
+        "descEn": "Library build tool",
+        "logo": "https://assets.rspack.dev/rslib/rslib-logo.svg",
+        "url": "https://github.com/web-infra-dev/rslib"
+      },
+      {
         "name": "Rspress",
         "desc": "静态站点生成器",
         "descEn": "Static site generator",
@@ -32,6 +39,13 @@
         "logoScale": 0.95,
         "logo": "https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png",
         "url": "https://rsdoctor.dev"
+      },
+      {
+        "name": "Awesome Rspack",
+        "desc": "Rspack 生态精选列表",
+        "descEn": "Rspack awesome things list",
+        "logo": "https://assets.rspack.dev/others/assets/awesome-rspack.png",
+        "url": "https://github.com/web-infra-dev/awesome-rspack"
       }
     ]
   }
