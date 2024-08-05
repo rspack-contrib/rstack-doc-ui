@@ -20,6 +20,14 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
       url: 'https://rspress.dev',
     },
     {
+      name: 'Rsdoctor',
+      desc: isEn
+        ? 'A powerful one-stop build analyzer for visualizing the build process and build artifacts.'
+        : '强大的一站式构建分析工具，用于可视化构建过程和构建产物。',
+      logo: 'https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png',
+      url: 'https://rsdoctor.dev',
+    },
+    {
       name: 'Rsbuild',
       desc: isEn
         ? 'An Rspack-based build tool that provides out-of-the-box setup for enjoyable development experience.'
@@ -28,12 +36,20 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
       url: 'https://rsbuild.dev',
     },
     {
-      name: 'Rsdoctor',
+      name: 'Rslib',
       desc: isEn
-        ? 'A powerful one-stop build analyzer for visualizing the build process and build artifacts.'
-        : '强大的一站式构建分析工具，用于可视化构建过程和构建产物。',
-      logo: 'https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png',
-      url: 'https://rsdoctor.dev',
+        ? 'A library build tool powered by Rsbuild that provides out-of-the-box configurations for library development.'
+        : '基于 Rsbuild 的库构建工具，提供开箱即用的库开发配置。',
+      logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
+      url: 'https://github.com/web-infra-dev/rslib',
+    },
+    {
+      name: 'Awesome Rspack',
+      desc: isEn
+        ? 'A curated list of awesome things related to Rspack and its ecology.'
+        : '与 Rspack 及其生态相关的精选事物列表。',
+      logo: 'https://assets.rspack.dev/others/assets/awesome-rspack.png',
+      url: 'https://github.com/web-infra-dev/awesome-rspack',
     },
   ];
 
