@@ -38,15 +38,15 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
     {
       name: 'Rslib',
       desc: isEn
-        ? 'A library build tool powered by Rsbuild that provides out-of-the-box configurations for library development.'
-        : '基于 Rsbuild 的库构建工具，提供开箱即用的库开发配置。',
+        ? 'A library build tool powered by Rsbuild for developing libraries or UI components.'
+        : '基于 Rsbuild 的库构建工具，用于开发工具库或 UI 组件库。',
       logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
       url: 'https://github.com/web-infra-dev/rslib',
     },
     {
       name: 'Awesome Rspack',
       desc: isEn
-        ? 'A curated list of awesome things related to Rspack and its ecology.'
+        ? 'A curated list of awesome things related to Rspack and its ecosystem.'
         : '与 Rspack 及其生态相关的精选事物列表。',
       logo: 'https://assets.rspack.dev/others/assets/awesome-rspack.png',
       url: 'https://github.com/web-infra-dev/awesome-rspack',
