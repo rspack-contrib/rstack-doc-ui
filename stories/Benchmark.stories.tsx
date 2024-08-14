@@ -6,27 +6,24 @@ import './index.scss';
 // From: https://github.com/rspack-contrib/performance-compare
 const BENCHMARK_DATA = {
   foo: {
-    label: 'Foo',
+    label: 'Webpack',
     metrics: [
-      { desc: 'dev', time: 0.49 },
-      { desc: 'build', time: 0.36 },
-      { desc: 'hmr', time: 0.1 },
+      // { desc: 'dev', time: 5.02 },
+      { desc: 'build', time: 6.52 },
     ],
   },
   bar: {
-    label: 'Bar',
+    label: 'Rspack v0.1',
     metrics: [
-      { desc: 'dev', time: 1.49 },
-      { desc: 'build', time: 1.36 },
-      { desc: 'hmr', time: 1.1 },
+      // { desc: 'dev', time: 0.69 },
+      { desc: 'build', time: 0.64 },
     ],
   },
   baz: {
-    label: 'Baz',
+    label: 'Rspack v1.0',
     metrics: [
-      { desc: 'dev', time: 2.49 },
-      { desc: 'build', time: 2.36 },
-      { desc: 'hmr', time: 2.1 },
+      // { desc: 'dev', time: 0.41 },
+      { desc: 'build', time: 0.28 },
     ],
   },
 };
