@@ -1,8 +1,8 @@
-import style from './index.module.scss';
 import Popover from 'antd/es/popover';
 import { PopoverContent } from './components/PopoverContent';
+import style from './index.module.scss';
 import navConfig from './nav-config.json';
-import { getLang, type Lang } from './utils';
+import { type Lang, getLang } from './utils';
 
 export interface NavIconProps {
   lang?: Lang;

@@ -1,7 +1,7 @@
 import {
-  moduleTools,
-  defineConfig,
   type PartialBaseBuildConfig,
+  defineConfig,
+  moduleTools,
 } from '@modern-js/module-tools';
 
 const sharedConfig: PartialBaseBuildConfig = {

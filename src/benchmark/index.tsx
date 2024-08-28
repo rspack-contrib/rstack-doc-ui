@@ -1,6 +1,6 @@
+import { useInView } from 'react-intersection-observer';
 import { ProgressBar } from './ProgressBar';
 import styles from './index.module.scss';
-import { useInView } from 'react-intersection-observer';
 
 export type BenchmarkData = Record<
   string,
