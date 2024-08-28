@@ -1,4 +1,4 @@
-import { Lang } from '../utils';
+import type { Lang } from '../utils';
 import style from './Link.module.scss';
 
 export type LinkInfo = {
@@ -27,6 +27,7 @@ export const Link = (props: LinkProps) => {
       <img
         className={style.logo}
         src={props.logo || IMAGE_PLACEHOLDER}
+        alt={props.name}
         style={{
           transform: props.logoScale ? `scale(${props.logoScale})` : '',
         }}

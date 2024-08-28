@@ -20,14 +20,27 @@
     "dev": "pnpm run storybook",
     "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006",
-    "prepare": "modern build",
+    "prepare": "modern build && simple-git-hooks",
     "build": "modern build",
-    "build:watch": "modern build -w"
+    "build:watch": "modern build -w",
+    "lint": "biome check",
+    "lint:fix": "biome check --write --unsafe"
   },
   "dependencies": {
     "framer-motion": "^11.3.4"
   },
+  "nano-staged": {
+    "*.{md,mdx,json,css,less,scss}": "prettier --write",
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "biome check --write --formatter-enabled=false --linter-enabled=false --no-errors-on-unmatched",
+      "prettier --write"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx nano-staged"
+  },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@modern-js/module-tools": "^2.55.0",
     "@rsbuild/core": "1.0.1-beta.16",
     "@rsbuild/plugin-react": "1.0.1-beta.16",
@@ -45,6 +58,8 @@
     "rimraf": "~6.0.1",
     "storybook": "^8.2.9",
     "@storybook/react": "^8.2.9",
+    "nano-staged": "^0.8.0",
+    "simple-git-hooks": "^2.11.1",
     "storybook-react-rsbuild": "0.0.14",
     "typescript": "~5.5.3"
   },
