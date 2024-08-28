@@ -7,7 +7,6 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-themes',
   ],
-
 };
 
 export default config;
