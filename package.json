@@ -29,10 +29,11 @@
   },
   "devDependencies": {
     "@modern-js/module-tools": "^2.55.0",
-    "@rsbuild/core": "1.0.1-beta.1",
-    "@rsbuild/plugin-react": "1.0.1-beta.1",
-    "@rsbuild/plugin-sass": "1.0.1-beta.1",
-    "@storybook/addon-essentials": "^8.2.4",
+    "@rsbuild/core": "1.0.1-beta.16",
+    "@rsbuild/plugin-react": "1.0.1-beta.16",
+    "@rsbuild/plugin-sass": "1.0.1-beta.16",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-themes": "^8.2.9",
     "@types/node": "~16.18.102",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -42,8 +43,9 @@
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.13.0",
     "rimraf": "~6.0.1",
-    "storybook": "^8.2.4",
-    "storybook-react-rsbuild": "^0.0.7",
+    "storybook": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "storybook-react-rsbuild": "0.0.14",
     "typescript": "~5.5.3"
   },
   "publishConfig": {
