@@ -30,9 +30,4 @@
   height: 28px;
   margin-right: 12px;
   object-fit: contain;
-
-  // logo not fit dark mode yet
-  :global(.dark) & {
-    display: none;
-  }
 }
