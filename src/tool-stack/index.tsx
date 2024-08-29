@@ -1,7 +1,9 @@
+import type React from 'react';
+import { memo } from 'react';
 import styles from './index.module.scss';
 
-export function ToolStack(props: { lang: 'en' | 'zh' }) {
-  const isEn = props.lang === 'en';
+export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
+  const isEn = lang === 'en';
   const tools = [
     {
       name: 'Rspack',
@@ -10,6 +12,14 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
         : '基于 Rust 编写的高性能 JavaScript 打包工具，具备与 webpack 兼容的 API。',
       logo: 'https://assets.rspack.dev/rspack/rspack-logo.svg',
       url: 'https://rspack.dev',
+    },
+    {
+      name: 'Rsbuild',
+      desc: isEn
+        ? 'An Rspack-based build tool that provides out-of-the-box setup for enjoyable development experience.'
+        : '基于 Rspack 的构建工具，包含开箱即用的预设配置，带来愉悦的开发体验。',
+      logo: 'https://assets.rspack.dev/rsbuild/rsbuild-logo.svg',
+      url: 'https://rsbuild.dev',
     },
     {
       name: 'Rspress',
@@ -27,14 +37,7 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
       logo: 'https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png',
       url: 'https://rsdoctor.dev',
     },
-    {
-      name: 'Rsbuild',
-      desc: isEn
-        ? 'An Rspack-based build tool that provides out-of-the-box setup for enjoyable development experience.'
-        : '基于 Rspack 的构建工具，包含开箱即用的预设配置，带来愉悦的开发体验。',
-      logo: 'https://assets.rspack.dev/rsbuild/rsbuild-logo.svg',
-      url: 'https://rsbuild.dev',
-    },
+
     {
       name: 'Rslib',
       desc: isEn
@@ -43,40 +46,25 @@ export function ToolStack(props: { lang: 'en' | 'zh' }) {
       logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
       url: 'https://github.com/web-infra-dev/rslib',
     },
-    {
-      name: 'Awesome Rspack',
-      desc: isEn
-        ? 'A curated list of awesome things related to Rspack and its ecosystem.'
-        : '与 Rspack 及其生态相关的精选事物列表。',
-      logo: 'https://assets.rspack.dev/others/assets/awesome-rspack.png',
-      url: 'https://github.com/web-infra-dev/awesome-rspack',
-    },
   ];
 
   return (
-    <div className={styles.container}>
-      <div className={styles.root}>
-        {tools.map(tool => (
+    <div className={styles.tools}>
+      {tools.map(({ name, desc, logo, url }) => {
+        return (
           <a
-            href={tool.url}
             target="_blank"
             rel="noreferrer"
-            className={styles.wrapperLink}
-            key={tool.name}
+            className={styles.tool}
+            key={name}
+            href={url}
           >
-            <div className={styles.card}>
-              <div className={styles.avatar}>
-                <img className={styles.logo} src={tool.logo} alt="logo" />
-              </div>
-              <div className={styles.mask} />
-              <div className={styles.body}>
-                <div className={styles.name}>{tool.name}</div>
-                <div className={styles.desc}>{tool.desc}</div>
-              </div>
-            </div>
+            <img src={logo} alt={name} className={styles.logo} loading="lazy" />
+            <div className={styles.toolTitle}>{name}</div>
+            <p className={styles.toolDescription}>{desc}</p>
           </a>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
-}
+});

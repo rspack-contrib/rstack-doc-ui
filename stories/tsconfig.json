@@ -1,7 +1,10 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "../"
+    "baseUrl": "../",
+    "rootDir": "../",
+    "module": "Preserve",
+    "moduleResolution": "Bundler"
   },
-  "include": ["./*.ts", "./*.tsx"]
+  "include": ["./*.ts", "./*.tsx", "./**/*.svg"]
 }

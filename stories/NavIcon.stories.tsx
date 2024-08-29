@@ -1,4 +1,4 @@
-import { NavIcon } from '../dist/nav-icon';
+import { NavIcon } from '@rstack-dev/doc-ui/nav-icon';
 import './index.scss';
 
 export const NavIconStory = () => (

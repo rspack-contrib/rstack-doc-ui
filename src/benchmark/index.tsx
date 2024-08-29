@@ -38,7 +38,7 @@ export function Benchmark({ data }: BenchmarkProps) {
       {Object.values(data).map(item => (
         <div key={item.label} className={styles.item}>
           <p className={styles.progressName}>{item.label}</p>
-          <div>
+          <div className={styles.metricItem}>
             {item.metrics.map(metric => (
               <ProgressBar
                 key={metric.desc}

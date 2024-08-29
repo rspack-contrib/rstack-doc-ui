@@ -36,6 +36,31 @@ export default defineConfig({
       outDir: './dist/tool-stack',
     },
     {
+      ...sharedConfig,
+      input: ['./src/hero/index.tsx'],
+      outDir: './dist/hero',
+    },
+    {
+      ...sharedConfig,
+      input: ['./src/section-style/index.tsx'],
+      outDir: './dist/section-style',
+    },
+    {
+      ...sharedConfig,
+      input: ['./src/fully-featured/index.tsx'],
+      outDir: './dist/fully-featured',
+    },
+    {
+      ...sharedConfig,
+      input: ['./src/built-with-rspack/index.tsx'],
+      outDir: './dist/built-with-rspack',
+    },
+    {
+      ...sharedConfig,
+      input: ['./src/why-rspack/index.tsx'],
+      outDir: './dist/why-rspack',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {
