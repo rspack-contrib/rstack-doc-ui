@@ -56,6 +56,11 @@ export default defineConfig({
       outDir: './dist/built-with-rspack',
     },
     {
+      ...sharedConfig,
+      input: ['./src/why-rspack/index.tsx'],
+      outDir: './dist/why-rspack',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

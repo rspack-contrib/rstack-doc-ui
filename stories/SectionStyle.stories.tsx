@@ -36,8 +36,8 @@ export const SectionStyleStory = () => {
                 <h1 className={titleStyle}>{title}</h1>
                 <p className={descStyle}>{description}</p>
               </div>
+              <div>something...</div>
             </div>
-            <div>something...</div>
           </section>
         );
       })}

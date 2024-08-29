@@ -32,6 +32,10 @@
     "./built-with-rspack": {
       "types": "./dist/built-with-rspack/index.d.ts",
       "import": "./dist/built-with-rspack/index.js"
+    },
+    "./why-rspack": {
+      "types": "./dist/why-rspack/index.d.ts",
+      "import": "./dist/why-rspack/index.js"
     }
   },
   "repository": {
@@ -83,6 +87,7 @@
     "react-intersection-observer": "^9.13.0",
     "rimraf": "~6.0.1",
     "storybook": "^8.2.9",
+    "lottie-web": "5.12.2",
     "@storybook/react": "^8.2.9",
     "nano-staged": "^0.8.0",
     "simple-git-hooks": "^2.11.1",

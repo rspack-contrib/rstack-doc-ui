@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { ALink, type LinkComp } from '../shared';
 
 import styles from './index.module.scss';
 
@@ -10,24 +10,15 @@ export type Company = {
   width?: string | number;
 };
 
-type LinkProps = {
-  className: string;
-  href: string;
-  children: ReactNode;
-};
-
-type LinkComp = (props: LinkProps) => JSX.Element;
-
-const NormalLink: LinkComp = ({ className, href, children }) => {
-  return (
-    <a href={href} className={className}>
-      {children}
-    </a>
-  );
-};
-
-const CompanyItem = ({ item, Link }: { item: Company; Link: LinkComp }) => {
+const CompanyItem = ({
+  item,
+  LinkComp,
+}: {
+  item: Company;
+  LinkComp: LinkComp;
+}) => {
   const { logo, name, url, text, width } = item;
+  const Link = LinkComp;
   return (
     <Link className={styles.logo} href={url}>
       <img src={logo} alt={name} style={{ width }} loading="lazy" />
@@ -51,13 +42,13 @@ export const BuiltWithRspack: React.FC<BuiltWithRspackProps> = ({
   LinkComp,
   companyList,
 }) => {
-  const Link = LinkComp ?? NormalLink;
+  const Link = LinkComp ?? ALink;
   return (
     <div className={styles.innerContainer}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.logos}>
         {companyList.map(i => {
-          return <CompanyItem key={i.name} item={i} Link={Link} />;
+          return <CompanyItem key={i.name} item={i} LinkComp={Link} />;
         })}
       </div>
     </div>

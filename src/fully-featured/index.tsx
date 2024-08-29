@@ -1,4 +1,5 @@
-import type { FC, ReactNode } from 'react';
+import type { FC } from 'react';
+import { ALink, type LinkComp } from '../shared';
 import styles from './index.module.scss';
 
 export type Feature = {
@@ -8,22 +9,8 @@ export type Feature = {
   link: string;
 };
 
-type LinkProps = {
-  className: string;
-  href: string;
-  children: ReactNode;
-};
-
-const NormalLink: FC<LinkProps> = ({ className, href, children }) => {
-  return (
-    <a href={href} className={className}>
-      {children}
-    </a>
-  );
-};
-
 export type FullyFeaturedProps = {
-  LinkComp?: (props: any) => JSX.Element;
+  LinkComp?: LinkComp;
   /**
    * 8 or 12 or 16
    */
@@ -34,7 +21,7 @@ export const FullyFeatured: FC<FullyFeaturedProps> = ({
   LinkComp,
   featureRows,
 }) => {
-  const Link = LinkComp ?? NormalLink;
+  const Link = LinkComp ?? ALink;
 
   return (
     <div className={styles.main}>
