@@ -27,6 +27,9 @@ importers:
       '@rsbuild/plugin-sass':
         specifier: 1.0.1-beta.16
         version: 1.0.1-beta.16(@rsbuild/core@1.0.1-beta.16)
+      '@rstack-dev/doc-ui':
+        specifier: workspace:*
+        version: 'link:'
       '@storybook/addon-essentials':
         specifier: ^8.2.9
         version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.6(@babel/core@7.24.6)))

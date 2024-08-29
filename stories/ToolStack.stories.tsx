@@ -1,4 +1,4 @@
-import { ToolStack } from '../dist/tool-stack';
+import { ToolStack } from '@rstack-dev/doc-ui/tool-stack';
 import './index.scss';
 
 export const ToolStackStory = () => (

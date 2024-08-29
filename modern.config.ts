@@ -41,6 +41,11 @@ export default defineConfig({
       outDir: './dist/hero',
     },
     {
+      ...sharedConfig,
+      input: ['./src/section-style/index.tsx'],
+      outDir: './dist/section-style',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

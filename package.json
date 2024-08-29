@@ -5,9 +5,26 @@
   "license": "MIT",
   "packageManager": "pnpm@9.5.0",
   "exports": {
-    "./nav-icon": "./dist/nav-icon/index.js",
-    "./benchmark": "./dist/benchmark/index.js",
-    "./tool-stack": "./dist/tool-stack/index.js"
+    "./nav-icon": {
+      "types": "./dist/nav-icon/index.d.ts",
+      "import": "./dist/nav-icon/index.js"
+    },
+    "./benchmark": {
+      "types": "./dist/benchmark/index.d.ts",
+      "import": "./dist/benchmark/index.js"
+    },
+    "./tool-stack": {
+      "types": "./dist/tool-stack/index.d.ts",
+      "import": "./dist/tool-stack/index.js"
+    },
+    "./section-style": {
+      "types": "./dist/section-style/index.d.ts",
+      "import": "./dist/section-style/index.js"
+    },
+    "./hero": {
+      "types": "./dist/hero/index.d.ts",
+      "import": "./dist/hero/index.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -40,6 +57,7 @@
     "pre-commit": "npx nano-staged"
   },
   "devDependencies": {
+    "@rstack-dev/doc-ui": "workspace:*",
     "@biomejs/biome": "1.8.3",
     "@modern-js/module-tools": "^2.55.0",
     "@rsbuild/core": "1.0.1-beta.16",

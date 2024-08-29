@@ -1,4 +1,4 @@
-import { Hero } from '../dist/hero';
+import { Hero } from '@rstack-dev/doc-ui/hero';
 import './index.scss';
 
 export const HeroStory = () => {
@@ -11,7 +11,7 @@ export const HeroStory = () => {
 
   return (
     <>
-      <div style={{ margin: 20 }}>
+      <div>
         <Hero
           showStars
           onClickLearnMore={handleClickLearnMore}
