@@ -46,6 +46,11 @@ export default defineConfig({
       outDir: './dist/section-style',
     },
     {
+      ...sharedConfig,
+      input: ['./src/fully-featured/index.tsx'],
+      outDir: './dist/fully-featured',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

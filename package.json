@@ -24,6 +24,10 @@
     "./hero": {
       "types": "./dist/hero/index.d.ts",
       "import": "./dist/hero/index.js"
+    },
+    "./fully-featured": {
+      "types": "./dist/fully-featured/index.d.ts",
+      "import": "./dist/fully-featured/index.js"
     }
   },
   "repository": {
