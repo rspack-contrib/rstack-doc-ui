@@ -35,6 +35,9 @@
             "filenameCases": ["camelCase", "PascalCase", "export"]
           }
         }
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   }
