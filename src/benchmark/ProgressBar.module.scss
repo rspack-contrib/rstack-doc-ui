@@ -1,12 +1,12 @@
 .container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50vw;
   height: 18px;
-  max-width: 800px;
   border-radius: 10px;
   box-sizing: content-box;
+  align-self: stretch;
 }
 
 @media screen and (max-width: 1060px) {
@@ -33,7 +33,10 @@
 .bar {
   height: 100%;
   border-radius: 5px;
-  background: linear-gradient(120deg, #ff8b00, hsl(32.71deg 100% 70%));
+  background: var(
+    --rs-benchamark-bar-background,
+    linear-gradient(279deg, #ff8b00 35.21%, #f93920 63.34%)
+  );
 }
 
 .desc {
