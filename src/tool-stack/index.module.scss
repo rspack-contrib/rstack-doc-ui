@@ -22,23 +22,23 @@
 
 :global {
   html:not(.dark) {
-    --tool-stack-shadow-color: #f9f9f9;
-    --tool-stack-title-color: #0b0c0e;
-    --tool-stack-desc-color: #6b7075;
+    --rs-tool-stack-shadow-color: #f9f9f9;
+    --rs-tool-stack-title-color: #0b0c0e;
+    --rs-tool-stack-desc-color: #6b7075;
 
-    --tool-stack-card-stroke: rgba(226, 232, 240, 0.5);
-    --tool-stack-card-gradient: linear-gradient(
+    --rs-tool-stack-card-stroke: rgba(226, 232, 240, 0.5);
+    --rs-tool-stack-card-gradient: linear-gradient(
       135deg,
       rgba(255, 255, 255, 1),
       rgba(249, 249, 249, 0.5)
     );
   }
   html.dark {
-    --tool-stack-shadow-color: #23272f;
-    --tool-stack-title-color: white;
-    --tool-stack-desc-color: #c6cacd;
-    --tool-stack-card-stroke: #23272f;
-    --tool-stack-card-gradient: linear-gradient(
+    --rs-tool-stack-shadow-color: #23272f;
+    --rs-tool-stack-title-color: white;
+    --rs-tool-stack-desc-color: #c6cacd;
+    --rs-tool-stack-card-stroke: #23272f;
+    --rs-tool-stack-card-gradient: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.03)
@@ -68,9 +68,9 @@
 
   // style
   border-radius: 10px;
-  border: 1px solid var(--tool-stack-card-stroke);
-  background: var(--tool-stack-card-gradient);
-  box-shadow: 0px -2px 10px 0px var(--tool-stack-shadow-color);
+  border: 1px solid var(--rs-tool-stack-card-stroke);
+  background: var(--rs-tool-stack-card-gradient);
+  box-shadow: 0px -2px 10px 0px var(--rs-tool-stack-shadow-color);
   transition: all 0.2s ease-out;
   &:hover {
     transform: scale3d(1.04, 1.04, 1.04);
@@ -83,7 +83,7 @@
 }
 
 .toolTitle {
-  color: var(--tool-stack-title-color);
+  color: var(--rs-tool-stack-title-color);
   text-align: center;
 
   font-size: 22px;
@@ -93,7 +93,7 @@
 }
 
 .toolDescription {
-  color: var(--tool-stack-desc-color);
+  color: var(--rs-tool-stack-desc-color);
   text-align: center;
 
   font-size: 14px;

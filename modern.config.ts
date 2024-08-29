@@ -36,6 +36,11 @@ export default defineConfig({
       outDir: './dist/tool-stack',
     },
     {
+      ...sharedConfig,
+      input: ['./src/hero/index.tsx'],
+      outDir: './dist/hero',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {
