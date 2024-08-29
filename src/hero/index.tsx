@@ -92,7 +92,6 @@ export const Hero: FC<HeroProps> = ({
           ? positions.map(([top, left], i) => {
               return (
                 <BackgroundStar
-                  // biome-ignore lint/suspicious/noArrayIndexKey: const array is fixed
                   key={i}
                   top={`${top}%`}
                   left={`${left}%`}
