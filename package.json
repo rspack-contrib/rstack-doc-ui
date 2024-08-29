@@ -28,6 +28,10 @@
     "./fully-featured": {
       "types": "./dist/fully-featured/index.d.ts",
       "import": "./dist/fully-featured/index.js"
+    },
+    "./built-with-rspack": {
+      "types": "./dist/built-with-rspack/index.d.ts",
+      "import": "./dist/built-with-rspack/index.js"
     }
   },
   "repository": {
