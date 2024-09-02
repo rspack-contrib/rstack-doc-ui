@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 export const useLottieAnimation = (
   isHovering: boolean,
-  lottieJsonData: string,
+  lottieJsonData?: string,
 ) => {
   const ref = useRef();
 
@@ -12,6 +12,9 @@ export const useLottieAnimation = (
 
   useEffect(() => {
     if (!ref.current) {
+      return;
+    }
+    if (!lottieJsonData) {
       return;
     }
     const animation = lottie.loadAnimation({

@@ -64,6 +64,7 @@ type HeroProps = {
   onClickLearnMore: () => void;
 
   showStars?: boolean;
+  showOvalBg?: boolean;
   logoUrl?: string;
   title?: string;
   subTitle?: string;
@@ -76,6 +77,7 @@ export const Hero: FC<HeroProps> = ({
   onClickGetStarted,
   onClickLearnMore,
   showStars = false,
+  showOvalBg = true,
   logoUrl = 'https://assets.rspack.dev/rspack/rspack-logo.svg',
   title = 'Rspack',
   subTitle = 'The fast Rust-based web bundler',
@@ -103,8 +105,8 @@ export const Hero: FC<HeroProps> = ({
             })
           : null}
         <div className={styles.logo}>
-          <img src={logoUrl} alt="logo" />
-          <div className={styles.ovalBg} />
+          <img src={logoUrl} className="rs-logo" alt="logo" />
+          {showOvalBg ? <div className={`${styles.ovalBg} rs-oval`} /> : null}
         </div>
         <h1 className={styles.title}>
           <span>{title}</span>

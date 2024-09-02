@@ -2,11 +2,6 @@
 @media screen and (max-width: 600px) {
   .logo {
     width: 120px !important;
-    height: 100px !important;
-  }
-  .ovalBg {
-    width: 168px !important;
-    height: 140px !important;
   }
   .buttonGroup {
     display: flex;
@@ -77,20 +72,21 @@
 
 .logo {
   width: 216px;
-  height: 180px;
   position: relative;
   user-select: none;
 
   .ovalBg {
-    width: 303px; // 216.225px * 1.4
-    height: 252px; // 180px * 1.4
+    width: 80%; // 216.225px * 1.4
+    height: 80%;
     z-index: -1;
     position: absolute;
     // our logo center is on the right and down
     top: calc(50% + 5px);
     left: calc(50% + 5px);
     transform: translate(-50%, -50%);
-    background-image: url('./ovalBg.svg');
+    background: var(--rs-hero-oval-background, #dfc228);
+    filter: var(--rs-hero-oval-filter, blur(40px));
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -107,7 +103,7 @@
 
   // background
   background: var(
-    --orange-gradient,
+    --rs-hero-title-gradient,
     linear-gradient(279deg, #ff8b00 35.21%, #f93920 63.34%)
   );
   background-clip: text;
@@ -172,7 +168,7 @@
   // style
   border: none;
   background: var(
-    --orange-gradient,
+    --rs-hero-button-gradient,
     linear-gradient(279deg, #ff8b00 35.21%, #f93920 63.34%)
   );
   // text
@@ -181,7 +177,7 @@
 
 .buttonSecondary {
   // style
-  border: 1.5px solid var(--orange-gradient, #ff8b00);
+  border: 1.5px solid var(--rs-hero-button-border, #ff8b00);
   background: transparent;
   // text
   color: var(--rs-hero-title-color, #0b0c0e);

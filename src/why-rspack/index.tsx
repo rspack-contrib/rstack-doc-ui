@@ -4,12 +4,12 @@ import styles from './index.module.scss';
 import { useCardAnimation } from './useCardAnimation';
 import { useLottieAnimation } from './useLottieAnimation';
 
-type Feature = {
+export type Feature = {
   img: string;
   url: string;
   title: string;
   description: string;
-  lottieJsonData: any;
+  lottieJsonData?: any;
 };
 
 type WhyRspackCardProps = {
@@ -112,6 +112,8 @@ const FeatureItem = memo(
       shineBg,
     } = useCardAnimation();
 
+    const hasLottieAnimation = lottieJsonData !== undefined;
+
     const { ref: lottieContainerRef } = useLottieAnimation(
       isHovering,
       lottieJsonData,
@@ -170,19 +172,30 @@ const FeatureItem = memo(
             }}
           />
           <div className={styles.featureIcon}>
-            <img
-              src={img}
-              alt={title}
-              className={styles.featureIconImg}
-              style={{
-                display: isHovering ? 'none' : 'flex',
-              }}
-            />
-            <div
-              ref={lottieContainerRef as any}
-              className={styles.featureIconImg}
-              style={{ display: isHovering ? 'flex' : 'none' }}
-            />
+            {
+              <img
+                src={img}
+                alt={title}
+                className={styles.featureIconImg}
+                style={
+                  hasLottieAnimation
+                    ? {
+                        display:
+                          isHovering && hasLottieAnimation ? 'none' : 'flex',
+                      }
+                    : {}
+                }
+              />
+            }
+            {hasLottieAnimation ? (
+              <div
+                ref={lottieContainerRef as any}
+                className={styles.featureIconImg}
+                style={{
+                  display: isHovering ? 'flex' : 'none',
+                }}
+              />
+            ) : null}
           </div>
           <div className={styles.featureContent}>
             <h3 className={styles.featureTitle}>{title}</h3>
@@ -215,7 +228,7 @@ const FeatureList: FC<FeatureListProps> = memo(({ LinkComp, features }) => {
   );
 });
 
-export type WhyRspackProps = FeatureListProps & WhyRspackCardProps;
+export type WhyRspackProps = FeatureListProps & Partial<WhyRspackCardProps>;
 
 export const WhyRspack: FC<WhyRspackProps> = ({
   title,
@@ -225,7 +238,9 @@ export const WhyRspack: FC<WhyRspackProps> = ({
 }) => {
   return (
     <div className={styles.features}>
-      <WhyRspackCard title={title} description={description} />
+      {title && description ? (
+        <WhyRspackCard title={title} description={description} />
+      ) : null}
       <FeatureList features={features} LinkComp={LinkComp} />
     </div>
   );
