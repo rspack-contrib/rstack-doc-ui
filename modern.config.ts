@@ -61,6 +61,11 @@ export default defineConfig({
       outDir: './dist/why-rspack',
     },
     {
+      ...sharedConfig,
+      input: ['./src/background-image/index.tsx'],
+      outDir: './dist/background-image',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

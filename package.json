@@ -36,6 +36,10 @@
     "./why-rspack": {
       "types": "./dist/why-rspack/index.d.ts",
       "import": "./dist/why-rspack/index.js"
+    },
+    "./background-image": {
+      "types": "./dist/background-image/index.d.ts",
+      "import": "./dist/background-image/index.js"
     }
   },
   "repository": {

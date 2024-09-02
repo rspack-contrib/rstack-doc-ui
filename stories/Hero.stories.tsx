@@ -1,4 +1,5 @@
 import { Hero } from '@rstack-dev/doc-ui/hero';
+import { BackgroundImage } from '@rstack-dev/doc-ui/background-image';
 import './index.scss';
 
 export const HeroStory = () => {
@@ -11,7 +12,8 @@ export const HeroStory = () => {
 
   return (
     <>
-      <div>
+      <div style={{ position: 'relative' }}>
+        <BackgroundImage />
         <Hero
           showStars
           onClickLearnMore={handleClickLearnMore}
