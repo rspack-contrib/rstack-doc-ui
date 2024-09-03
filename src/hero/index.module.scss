@@ -1,7 +1,7 @@
 // S
 @media screen and (max-width: 600px) {
-  .logo {
-    width: 120px !important;
+  .logoImg {
+    height: 100px !important;
   }
   .buttonGroup {
     display: flex;
@@ -75,9 +75,12 @@
 }
 
 .logo {
-  width: 216px;
   position: relative;
   user-select: none;
+
+  .logoImg {
+    height: 180px;
+  }
 
   .ovalBg {
     width: 80%; // 216.225px * 1.4

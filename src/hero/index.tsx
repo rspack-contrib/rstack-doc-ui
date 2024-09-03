@@ -105,7 +105,11 @@ export const Hero: FC<HeroProps> = ({
             })
           : null}
         <div className={styles.logo}>
-          <img src={logoUrl} className="rs-logo" alt="logo" />
+          <img
+            src={logoUrl}
+            className={`${styles.logoImg} rs-logo`}
+            alt="logo"
+          />
           {showOvalBg ? <div className={`${styles.ovalBg} rs-oval`} /> : null}
         </div>
         <h1 className={styles.title}>
