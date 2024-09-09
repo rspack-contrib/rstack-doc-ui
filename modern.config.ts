@@ -66,6 +66,11 @@ export default defineConfig({
       outDir: './dist/background-image',
     },
     {
+      ...sharedConfig,
+      input: ['./src/announcement/index.tsx'],
+      outDir: './dist/announcement',
+    },
+    {
       buildType: 'bundleless',
       outDir: './dist',
       dts: {

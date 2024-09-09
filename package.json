@@ -40,6 +40,10 @@
     "./background-image": {
       "types": "./dist/background-image/index.d.ts",
       "import": "./dist/background-image/index.js"
+    },
+    "./announcement": {
+      "types": "./dist/announcement/index.d.ts",
+      "import": "./dist/announcement/index.js"
     }
   },
   "repository": {
