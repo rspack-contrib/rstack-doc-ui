@@ -1,7 +1,7 @@
 // M
 @media screen and (min-width: 601px) and (max-width: 1050px) {
   .title {
-    font-size: 32px !important;
+    font-size: 40px !important;
     line-height: 48px !important;
   }
   .innerContainer {
@@ -10,8 +10,9 @@
     background-size: 100% 100% !important;
   }
   .logo {
-    max-width: 50%;
-    flex: 1 1 40% !important;
+    min-width: 180px !important;
+    transform: scale(0.8);
+    flex: 1 0 !important;
   }
 }
 
@@ -25,13 +26,13 @@
     background: url('https://assets.rspack.dev/rspack/assets/landingpage-built-with-rspack-bg-m.png')
       no-repeat !important;
     background-size: 100% 100% !important;
-    padding: 32px 0px !important;
+    padding: 26px 0px !important;
   }
 
   .logo {
     transform: scale(0.8);
-    min-width: 120px !important;
-    flex: 1 1 40% !important;
+    max-width: 50% !important;
+    flex: 1 0 50% !important;
   }
 }
 
@@ -74,16 +75,19 @@
   align-self: stretch;
   flex-wrap: wrap;
   filter: var(--rs-built-with-rspack-invert-filter, none);
-  gap: 16px;
 
   .logo {
+    min-height: 100px;
+    flex: 1 1 250px;
+    align-self: stretch;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    min-height: 140px;
-    flex: 1 0;
-    align-self: stretch;
 
     // reset style
     text-decoration: none;
