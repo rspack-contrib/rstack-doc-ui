@@ -5,8 +5,6 @@
     line-height: 48px !important;
   }
   .innerContainer {
-    background: url('https://assets.rspack.dev/rspack/assets/landingpage-built-with-rspack-bg-m.png')
-      no-repeat !important;
     background-size: 100% 100% !important;
   }
   .logo {
@@ -23,10 +21,17 @@
     line-height: 48px !important;
   }
   .innerContainer {
-    background: url('https://assets.rspack.dev/rspack/assets/landingpage-built-with-rspack-bg-m.png')
-      no-repeat !important;
     background-size: 100% 100% !important;
-    padding: 26px 0px !important;
+    padding: 26px 0px 0px 0px !important;
+    &::before {
+      width: 300px !important;
+      height: 300px !important;
+    }
+
+    &::after {
+      width: 300px !important;
+      height: 300px !important;
+    }
   }
 
   .logo {
@@ -47,10 +52,39 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: url('https://assets.rspack.dev/rspack/assets/landingpage-built-with-rspack-bg.png')
-    no-repeat;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 400px;
+    height: 400px;
+
+    user-select: none;
+
+    background: url('https://assets.rspack.dev/rspack/assets/landingpage-who-is-using-left-border.png')
+      no-repeat;
+    background-size: 100% 100%;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 400px;
+    height: 400px;
+
+    user-select: none;
+
+    background: url('https://assets.rspack.dev/rspack/assets/landingpage-who-is-using-right-border.png')
+      no-repeat;
+    background-size: 100% 100%;
+  }
   background-size: 100% 100%;
-  background-position: center center;
 }
 
 .title {
