@@ -41,8 +41,8 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
     {
       name: 'Rslib',
       desc: isEn
-        ? 'A library build tool powered by Rsbuild for developing libraries or UI components.'
-        : '基于 Rsbuild 的库构建工具，用于开发工具库或 UI 组件库。',
+        ? 'A library development tool powered by Rsbuild for developing libraries or UI components.'
+        : '基于 Rsbuild 的 library 开发工具，用于开发工具库或 UI 组件库。',
       logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
       url: 'https://github.com/web-infra-dev/rslib',
     },
