@@ -62,7 +62,7 @@
     "build:watch": "modern build -w",
     "lint": "biome check",
     "lint:fix": "biome check --write --unsafe",
-    "release": "node ./scripts/release.mjs"
+    "bump": "npx bumpp"
   },
   "dependencies": {
     "framer-motion": "^11.3.4"
