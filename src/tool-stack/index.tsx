@@ -1,9 +1,9 @@
-import type React from 'react';
-import { memo } from 'react';
-import styles from './index.module.scss';
+import type React from 'react'
+import { memo } from 'react'
+import styles from './index.module.scss'
 
 export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
-  const isEn = lang === 'en';
+  const isEn = lang === 'en'
   const tools = [
     {
       name: 'Rspack',
@@ -41,12 +41,12 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
     {
       name: 'Rslib',
       desc: isEn
-        ? 'A library development tool powered by Rsbuild for developing libraries or UI components.'
-        : '基于 Rsbuild 的 library 开发工具，用于开发工具库或 UI 组件库。',
+        ? 'A Rsbuild-based library development tool for creating JavaScript libraries in a simple and intuitive way.'
+        : '基于 Rsbuild 的 library 开发工具，以简单直观的方式创建 JavaScript 库',
       logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
-      url: 'https://github.com/web-infra-dev/rslib',
+      url: 'https://lib.rsbuild.dev',
     },
-  ];
+  ]
 
   return (
     <div className={styles.tools}>
@@ -63,8 +63,8 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
             <div className={styles.toolTitle}>{name}</div>
             <p className={styles.toolDescription}>{desc}</p>
           </a>
-        );
+        )
       })}
     </div>
-  );
-});
+  )
+})

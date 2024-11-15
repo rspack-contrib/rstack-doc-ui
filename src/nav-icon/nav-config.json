@@ -30,7 +30,7 @@
         "desc": "Library 开发工具",
         "descEn": "Library development tool",
         "logo": "https://assets.rspack.dev/rslib/rslib-logo.svg",
-        "url": "https://github.com/web-infra-dev/rslib"
+        "url": "https://lib.rsbuild.dev"
       },
       {
         "name": "Rsdoctor",
