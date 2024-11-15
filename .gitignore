@@ -28,5 +28,3 @@ log/
 .idea/
 
 **/*/typings/auto-generated
-
-modern.config.local.*

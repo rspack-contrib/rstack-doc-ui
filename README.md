@@ -29,5 +29,3 @@ Build the module for production:
 ```bash
 pnpm run build
 ```
-
-For more information, see the [Modern.js Module documentation](https://modernjs.dev/module-tools/en).
