@@ -27,7 +27,7 @@
       },
       {
         "name": "Rslib",
-        "desc": "Library 开发工具",
+        "desc": "库开发工具",
         "descEn": "Library development tool",
         "logo": "https://assets.rspack.dev/rslib/rslib-logo.svg",
         "url": "https://lib.rsbuild.dev"
