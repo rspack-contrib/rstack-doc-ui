@@ -66,7 +66,7 @@
     "bump": "npx bumpp"
   },
   "dependencies": {
-    "framer-motion": "^11.12.0"
+    "framer-motion": "^12.0.5"
   },
   "nano-staged": {
     "*.{md,mdx,json,css,less,scss}": "prettier --write",
