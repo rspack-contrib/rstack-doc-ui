@@ -21,7 +21,6 @@
         "name": "Rspress",
         "desc": "静态站点生成器",
         "descEn": "Static site generator",
-        "logoScale": 1.1,
         "logo": "https://assets.rspack.dev/rspress/rspress-logo-480x480.png",
         "url": "https://rspress.dev"
       },

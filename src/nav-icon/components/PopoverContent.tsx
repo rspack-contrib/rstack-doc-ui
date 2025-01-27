@@ -22,7 +22,7 @@ export const PopoverContent = ({
           className={style.logo}
           alt="web-infra-logo"
         />
-        <div className={style.titleText}>Web Infra</div>
+        <div className={style.titleText}>Rstack</div>
       </a>
     </div>
     {config.map(item => (
