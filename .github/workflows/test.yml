@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Pnpm
-        run: npm i corepack@latest -g && corepack enable
+        run: npm install -g corepack@latest --force && corepack enable
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
