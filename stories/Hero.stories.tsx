@@ -1,5 +1,5 @@
-import { Hero } from '@rstack-dev/doc-ui/hero';
 import { BackgroundImage } from '@rstack-dev/doc-ui/background-image';
+import { Hero } from '@rstack-dev/doc-ui/hero';
 import './index.scss';
 
 export const HeroStory = () => {
@@ -16,6 +16,12 @@ export const HeroStory = () => {
         <BackgroundImage />
         <Hero
           showStars
+          onClickLearnMore={handleClickLearnMore}
+          onClickGetStarted={handleClickGetStarted}
+        />
+        <Hero
+          showStars
+          githubURL="https://github.com/rspack-contrib/rstack-doc-ui"
           onClickLearnMore={handleClickLearnMore}
           onClickGetStarted={handleClickGetStarted}
         />

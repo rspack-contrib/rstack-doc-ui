@@ -150,9 +150,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px 12px 24px;
+  padding: 12px 28px 12px 28px;
   border-radius: 25px;
   text-align: center;
+  text-decoration: none;
 
   font-size: 16px;
   font-style: normal;
@@ -160,15 +161,17 @@
   line-height: 150%; /* 24px */
   text-transform: capitalize;
 
+  cursor: pointer;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.2s;
-    opacity: 0.8;
+    opacity: 0.75;
+    transform: translate3d(0, -2px, 0);
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 
@@ -181,6 +184,13 @@
   );
   // text
   color: #fff;
+}
+
+.githubIcon {
+  width: 22px;
+  height: 22px;
+  color: currentColor;
+  margin-right: 8px;
 }
 
 .buttonSecondary {
