@@ -6,7 +6,7 @@ UI components for the Rspack family websites.
 
 `NavIcon` component:
 
-![image](https://github.com/rspack-contrib/rsfamily-doc-ui/assets/7237365/783eb582-e780-4134-8666-69d154b562f5)
+![image](https://github.com/user-attachments/assets/4132a171-8fc4-40cd-978b-95c37bea31df)
 
 ## Setup
 
@@ -21,6 +21,7 @@ pnpm i
 Run and debug the module:
 
 ```bash
+pnpm run build -w
 pnpm run storybook
 ```
 
