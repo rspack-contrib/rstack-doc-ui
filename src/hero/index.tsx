@@ -61,7 +61,7 @@ const useMouseMove = () => {
 
 type HeroProps = {
   onClickGetStarted: () => void;
-  onClickLearnMore: () => void;
+  onClickLearnMore?: () => void;
 
   showStars?: boolean;
   showOvalBg?: boolean;
