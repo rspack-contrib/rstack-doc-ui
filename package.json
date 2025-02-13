@@ -84,10 +84,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@rsbuild/core": "1.2.3",
     "@rsbuild/plugin-react": "1.1.0",
     "@rsbuild/plugin-sass": "1.2.0",
-    "@rslib/core": "^0.4.0",
+    "@rslib/core": "^0.4.1",
     "@rstack-dev/doc-ui": "workspace:*",
     "@storybook/addon-essentials": "^8.5.2",
     "@storybook/addon-themes": "^8.5.2",
@@ -109,6 +108,7 @@
     "semver": "7.7.0",
     "simple-git-hooks": "^2.11.1",
     "storybook": "^8.5.2",
+    "storybook-addon-rslib": "^0.1.9",
     "storybook-react-rsbuild": "0.1.8",
     "typescript": "~5.7.3"
   },
