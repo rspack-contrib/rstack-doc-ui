@@ -7,7 +7,7 @@ export default defineConfig({
   lib: [
     {
       format: 'esm',
-      syntax: 'es2015',
+      syntax: 'es2018',
       autoExternal: false,
       banner: {
         js: `import './index.css';`,
@@ -25,6 +25,18 @@ export default defineConfig({
           'why-rspack': './src/why-rspack/index.tsx',
           'background-image': './src/background-image/index.tsx',
           announcement: './src/announcement/index.tsx',
+        },
+      },
+    },
+    // without banner
+    {
+      format: 'esm',
+      syntax: 'es2018',
+      autoExternal: false,
+      dts: true,
+      source: {
+        entry: {
+          antd: './src/antd/index.tsx',
         },
       },
     },
