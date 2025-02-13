@@ -45,6 +45,10 @@
     "./announcement": {
       "types": "./dist/announcement/index.d.ts",
       "import": "./dist/announcement/index.js"
+    },
+    "./antd": {
+      "types": "./dist/antd/index.d.ts",
+      "import": "./dist/antd/index.js"
     }
   },
   "repository": {
