@@ -1,6 +1,8 @@
 # Rstack Doc UI
 
-UI components for the Rspack family websites.
+Shared UI components for the Rstack websites.
+
+> This package should only be used in Rstack projects.
 
 ## Example
 
