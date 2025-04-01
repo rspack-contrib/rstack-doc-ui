@@ -109,7 +109,7 @@
     "simple-git-hooks": "^2.11.1",
     "storybook": "^8.6.2",
     "storybook-addon-rslib": "^1.0.0",
-    "storybook-react-rsbuild": "0.1.10",
+    "storybook-react-rsbuild": "1.0.1",
     "typescript": "~5.8.2"
   },
   "publishConfig": {
