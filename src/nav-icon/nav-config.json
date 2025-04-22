@@ -5,8 +5,8 @@
     "links": [
       {
         "name": "Rspack",
-        "desc": "基于 Rust 的打包工具",
-        "descEn": "Rust-based web bundler",
+        "desc": "高性能打包工具",
+        "descEn": "High-performance bundler",
         "logo": "https://assets.rspack.dev/rspack/rspack-logo.svg",
         "url": "https://rspack.dev"
       },
@@ -33,16 +33,24 @@
       },
       {
         "name": "Rsdoctor",
-        "desc": "一站式构建分析工具",
-        "descEn": "Build analyzer for Rspack",
+        "desc": "构建分析工具",
+        "descEn": "Build analyzer",
         "logoScale": 0.95,
         "logo": "https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png",
         "url": "https://rsdoctor.dev"
       },
       {
+        "name": "Rstest",
+        "desc": "测试框架",
+        "descEn": "Testing framework",
+        "logoScale": 0.95,
+        "logo": "https://assets.rspack.dev/rstest/rstest-logo.svg",
+        "url": "https://github.com/web-infra-dev/rstest"
+      },
+      {
         "name": "Awesome Rspack",
-        "desc": "Rspack 生态精选列表",
-        "descEn": "Rspack awesome things list",
+        "desc": "探索 Rspack 生态",
+        "descEn": "Explore Rspack ecosystem",
         "logo": "https://assets.rspack.dev/others/assets/awesome-rspack.png",
         "url": "https://github.com/web-infra-dev/awesome-rspack"
       }
