@@ -1,9 +1,10 @@
+// L - Large screens: three cards per row
 @media screen and (min-width: 1001px) {
   .tools {
     .tool {
-      min-width: calc(33.33% - 11px);
-      max-width: calc(33.33% - 11px);
-      flex: 0 0 calc(33.33% - 11px);
+      min-width: calc(33.33% - 21.33px);
+      max-width: calc(33.33% - 21.33px);
+      flex: 0 0 calc(33.33% - 21.33px);
     }
   }
 }
@@ -12,9 +13,9 @@
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .tools {
     .tool {
-      min-width: calc(50% - 8px);
-      max-width: calc(50% - 8px);
-      flex: 0 0 calc(50% - 8px);
+      min-width: calc(50% - 16px);
+      max-width: calc(50% - 16px);
+      flex: 0 0 calc(50% - 16px);
     }
   }
 }
@@ -60,7 +61,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 32px;
 }
 
 .tool {
@@ -69,7 +70,7 @@
 
   display: flex;
   flex: 1 1 0;
-  padding: 24px 16px;
+  padding: 24px;
   box-sizing: border-box;
 
   flex-direction: column;
@@ -110,5 +111,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    margin: 0;
   }
 }

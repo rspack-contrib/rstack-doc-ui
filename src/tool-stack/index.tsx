@@ -1,5 +1,11 @@
 import type React from 'react';
 import { memo } from 'react';
+import {
+  descStyle,
+  innerContainerStyle,
+  titleAndDescStyle,
+  titleStyle,
+} from '../section-style';
 import styles from './index.module.scss';
 
 export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
@@ -56,22 +62,37 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
   ];
 
   return (
-    <div className={styles.tools}>
-      {tools.map(({ name, desc, logo, url }) => {
-        return (
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className={styles.tool}
-            key={name}
-            href={url}
-          >
-            <img src={logo} alt={name} className={styles.logo} loading="lazy" />
-            <div className={styles.toolTitle}>{name}</div>
-            <p className={styles.toolDescription}>{desc}</p>
-          </a>
-        );
-      })}
+    <div className={innerContainerStyle}>
+      <div className={titleAndDescStyle}>
+        <h1 className={titleStyle}>Rstack</h1>
+        <p className={descStyle}>
+          {isEn
+            ? 'A unified JavaScript toolchain built around Rspack, with consistent architecture and ultimate performance'
+            : '围绕 Rspack 打造的统一 JavaScript 工具链，一致的底层架构，极致的性能体验'}
+        </p>
+      </div>
+      <div className={styles.tools}>
+        {tools.map(({ name, desc, logo, url }) => {
+          return (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className={styles.tool}
+              key={name}
+              href={url}
+            >
+              <img
+                src={logo}
+                alt={name}
+                className={styles.logo}
+                loading="lazy"
+              />
+              <div className={styles.toolTitle}>{name}</div>
+              <p className={styles.toolDescription}>{desc}</p>
+            </a>
+          );
+        })}
+      </div>
     </div>
   );
 });
