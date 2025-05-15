@@ -45,7 +45,6 @@
 
     .desc {
       font-size: 16px !important;
-      line-height: 28px !important;
     }
   }
 }
@@ -66,7 +65,6 @@
     }
     .desc {
       font-size: 15px !important;
-      line-height: 28px !important;
     }
   }
 }
@@ -97,6 +95,7 @@
   align-items: center;
   gap: 32px;
   align-self: stretch;
+
   .title {
     margin: 0;
 
@@ -119,7 +118,8 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 140% */
+    line-height: 32px;
+    max-width: 760px;
   }
 }
 
