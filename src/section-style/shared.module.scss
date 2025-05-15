@@ -5,23 +5,13 @@
 // M 601 - 834
 // S < 601
 
-// XXL
-@media screen and (min-width: 1441px) {
-  .container {
-    padding: 96px 144px !important;
-  }
-  .titleAndDesc {
-    padding: 0px 144px 32px 144px !important;
-  }
-}
-
 // XL
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+@media screen and (min-width: 1281px) {
   .container {
     padding: 96px 144px !important;
   }
   .titleAndDesc {
-    padding: 0px 144px 32px 144px !important;
+    padding: 0px 144px 36px 144px !important;
   }
 }
 
@@ -31,7 +21,7 @@
     padding: 80px 80px !important;
   }
   .titleAndDesc {
-    padding: 0px 16px !important;
+    padding: 0px 16px 32px !important;
   }
 }
 
@@ -39,16 +29,20 @@
 @media screen and (min-width: 601px) and (max-width: 834px) {
   .container {
     padding: 64px 32px !important;
+
     .innerContainer {
       gap: 16px !important;
     }
   }
+
   .titleAndDesc {
-    padding: 0px 16px !important;
+    padding: 0px 16px 32px !important;
     gap: 16px !important;
+
     .title {
       font-size: 32px !important;
     }
+
     .desc {
       font-size: 16px !important;
       line-height: 28px !important;
@@ -92,7 +86,7 @@
     flex-direction: column;
     width: 100%;
 
-    max-width: 1440px;
+    max-width: 1296px;
   }
 }
 

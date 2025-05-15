@@ -32,7 +32,7 @@
       letter-spacing: -1.28px !important;
     }
     .whyRspackDescription {
-      font-size: 20px !important;
+      font-size: 19px !important;
       font-style: normal !important;
       font-weight: 400 !important;
       line-height: normal !important;
@@ -165,6 +165,7 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: -2px;
+        margin: 0;
         // style
         background: var(
           --Linear-Text,
@@ -177,7 +178,7 @@
 
       .whyRspackDescription {
         // text
-        font-size: 20px;
+        font-size: 19px;
         font-style: normal;
         font-weight: 400;
         line-height: 40px; /* 166.667% */
