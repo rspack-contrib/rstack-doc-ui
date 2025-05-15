@@ -5,11 +5,15 @@ export const ToolStackStory = () => (
   <>
     <h2>English</h2>
     <div style={{ margin: 20 }}>
-      <ToolStack lang="en" />
+      <div style={{ maxWidth: 1296 }}>
+        <ToolStack lang="en" />
+      </div>
     </div>
     <h2>中文</h2>
     <div style={{ margin: 20 }}>
-      <ToolStack lang="zh" />
+      <div style={{ maxWidth: 1296 }}>
+        <ToolStack lang="zh" />
+      </div>
     </div>
   </>
 );

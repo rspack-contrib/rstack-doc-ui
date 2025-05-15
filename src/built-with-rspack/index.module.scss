@@ -17,12 +17,14 @@
 // S
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 32px !important;
+    font-size: 30px !important;
     line-height: 48px !important;
   }
+
   .innerContainer {
     background-size: 100% 100% !important;
-    padding: 26px 0px 0px 0px !important;
+    padding: 48px 0px 0px 0px !important;
+
     &::before {
       width: 300px !important;
       height: 300px !important;
@@ -47,7 +49,7 @@
 
   box-sizing: border-box;
 
-  padding: 32px;
+  padding: 64px 48px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

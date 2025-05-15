@@ -1,23 +1,31 @@
-// M
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 1001px) {
   .tools {
-    & > :nth-child(1),
-    & > :nth-child(2) {
-      max-width: 60% !important;
-      min-width: 40% !important;
-      width: 50%;
-    }
-    & > .tool:not(:nth-child(-n + 2)) {
-      min-width: 30% !important;
-      max-width: 33% !important;
+    .tool {
+      min-width: calc(33.33% - 11px);
+      max-width: calc(33.33% - 11px);
+      flex: 0 0 calc(33.33% - 11px);
     }
   }
 }
 
-// S
+// M - Medium screens: two cards per row
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .tools {
+    .tool {
+      min-width: calc(50% - 8px);
+      max-width: calc(50% - 8px);
+      flex: 0 0 calc(50% - 8px);
+    }
+  }
+}
+
+// S - Small screens: one card per row
 @media screen and (max-width: 600px) {
   .tools {
     flex-direction: column;
+    .tool {
+      width: 100%;
+    }
   }
 }
 
