@@ -1,5 +1,5 @@
 // L - Large screens: three cards per row
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1101px) {
   .tools {
     .tool {
       min-width: calc(33.33% - 21.33px);
@@ -10,7 +10,7 @@
 }
 
 // M - Medium screens: two cards per row
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1100px) {
   .tools {
     .tool {
       min-width: calc(50% - 16px);
@@ -34,25 +34,27 @@
   html:not(.dark) {
     --rs-tool-stack-shadow-color: #f9f9f9;
     --rs-tool-stack-title-color: #0b0c0e;
-    --rs-tool-stack-desc-color: #6b7075;
+    --rs-tool-stack-desc-color: #8fa1b9;
 
-    --rs-tool-stack-card-stroke: rgba(226, 232, 240, 0.5);
+    --rs-tool-stack-card-stroke: rgba(143, 161, 185, 0.3);
     --rs-tool-stack-card-gradient: linear-gradient(
       135deg,
       rgba(255, 255, 255, 1),
       rgba(249, 249, 249, 0.5)
     );
+    --rs-tools-stack-url-color: #f93920;
   }
   html.dark {
     --rs-tool-stack-shadow-color: #23272f;
     --rs-tool-stack-title-color: white;
-    --rs-tool-stack-desc-color: #c6cacd;
+    --rs-tool-stack-desc-color: #8fa1b9;
     --rs-tool-stack-card-stroke: #23272f;
     --rs-tool-stack-card-gradient: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.03)
     );
+    --rs-tools-stack-url-color: #f93920;
   }
 }
 
@@ -74,43 +76,72 @@
   box-sizing: border-box;
 
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  align-items: start;
+  gap: 8px;
   align-self: stretch;
 
   // style
   border-radius: 10px;
   border: 1px solid var(--rs-tool-stack-card-stroke);
   background: var(--rs-tool-stack-card-gradient);
-  box-shadow: 0px -2px 10px 0px var(--rs-tool-stack-shadow-color);
   transition: all 0.2s ease-out;
+
   &:hover {
-    transform: scale3d(1.04, 1.04, 1.04);
+    transform: scale3d(1.03, 1.03, 1.03);
   }
 
   .logo {
-    height: 90px;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
     flex-shrink: 0;
+  }
+
+  .toolContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .toolTitle {
     color: var(--rs-tool-stack-title-color);
     text-align: center;
 
-    font-size: 22px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; /* 145.455% */
+    line-height: 24px;
+    margin-top: 4px;
   }
 
   .toolDescription {
     color: var(--rs-tool-stack-desc-color);
-    text-align: center;
+    text-align: left;
+    height: 48px;
 
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     margin: 0;
+  }
+
+  .toolUrl {
+    color: var(--rs-tools-stack-url-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
   }
 }
