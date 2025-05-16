@@ -12,88 +12,6 @@ export type Feature = {
   lottieJsonData?: any;
 };
 
-type WhyRspackCardProps = {
-  title: string;
-  description: string;
-};
-
-const WhyRspackCard: FC<WhyRspackCardProps> = memo(({ title, description }) => {
-  const {
-    container,
-    onMouseEnter,
-    onMouseLeave,
-    onMouseMove,
-    onTouchEnd,
-    onTouchMove,
-    onTouchStart,
-    outerContainer,
-    ref,
-    shine,
-    shineBg,
-  } = useCardAnimation();
-
-  return (
-    <div
-      style={{
-        position: 'relative',
-        transform: outerContainer,
-        transformStyle: 'preserve-3d',
-        zIndex: 6,
-        WebkitTapHighlightColor: 'rgba(#000, 0)',
-      }}
-      className={styles.whyRspackCard}
-      ref={ref as any}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      onMouseMove={onMouseMove}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
-      onTouchStart={onTouchStart}
-    >
-      <div
-        className={styles.whyRspack}
-        style={{
-          transform: container,
-          position: 'relative',
-          transition: 'all 0.2s ease-out',
-        }}
-      >
-        <div
-          className="shine"
-          style={{
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            right: '0',
-            bottom: '0',
-            borderRadius: '20px',
-            zIndex: '8',
-            ...(shine
-              ? {
-                  transform: shine,
-                }
-              : {}),
-            ...(shineBg
-              ? {
-                  background: shineBg,
-                }
-              : {}),
-          }}
-        />
-        <div className={styles.whyRspackContent}>
-          <h3 className={styles.whyRspackTitle}>{title}</h3>
-          <p className={styles.whyRspackDescription}>{description}</p>
-          <img
-            className={styles.whyRspackBg}
-            src="https://assets.rspack.dev/rspack/assets/landingpage-why-rspack-card-why-bg.png"
-            alt="bg"
-          />
-        </div>
-      </div>
-    </div>
-  );
-});
-
 const FeatureItem = memo(
   ({ feature, LinkComp }: { feature: Feature; LinkComp: LinkComp }) => {
     const { description, img, title, url, lottieJsonData } = feature;
@@ -228,19 +146,11 @@ const FeatureList: FC<FeatureListProps> = memo(({ LinkComp, features }) => {
   );
 });
 
-export type WhyRspackProps = FeatureListProps & Partial<WhyRspackCardProps>;
+export type WhyRspackProps = FeatureListProps;
 
-export const WhyRspack: FC<WhyRspackProps> = ({
-  title,
-  description,
-  features,
-  LinkComp,
-}) => {
+export const WhyRspack: FC<WhyRspackProps> = ({ features, LinkComp }) => {
   return (
     <div className={styles.features}>
-      {title && description ? (
-        <WhyRspackCard title={title} description={description} />
-      ) : null}
       <FeatureList features={features} LinkComp={LinkComp} />
     </div>
   );

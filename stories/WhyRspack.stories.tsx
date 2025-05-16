@@ -13,50 +13,45 @@ import Lightning from './why-rspack-assets/Lightning.svg';
 import SpeedometerJson from './why-rspack-assets/Speedometer.json';
 import Speedometer from './why-rspack-assets/Speedometer.svg';
 
+const description =
+  'Using Rspack to bring you the ultimate development experience.';
+
 const features: Feature[] = [
   {
     img: Speedometer,
     url: '/guide/start/introduction',
     title: 'FastStartup',
-    description: 'FastStartupDesc',
+    description,
     lottieJsonData: SpeedometerJson,
   },
   {
     img: Lightning,
     url: '/guide/start/introduction',
     title: 'LightningHMR',
-    description: 'LightningHMRDesc',
+    description,
     lottieJsonData: LightningJson,
   },
   {
     img: FrameCheck,
     url: '/guide/tech/react',
     title: 'FrameworkAgnostic',
-    description: 'FrameworkAgnosticDesc',
+    description,
     lottieJsonData: FrameCheckJson,
   },
   {
     img: Compatible,
     url: '/guide/compatibility/plugin',
     title: 'WebpackCompatible',
-    description: 'WebpackCompatibleDesc',
+    description,
     lottieJsonData: CompatibleJson,
   },
 ];
 
-const title = 'Why Rspack?';
-const description =
-  'Rspack is a high performance JavaScript bundler written in Rust. It offers strong compatibility with the webpack ecosystem, allowing for seamless replacement of webpack, and provides lightning fast build speeds.';
-
 export const WhyRspackStory = () => {
   return (
-    <section className={containerStyle} key={title}>
+    <section className={containerStyle}>
       <div className={innerContainerStyle}>
-        <WhyRspack
-          features={features}
-          title={title}
-          description={description}
-        />
+        <WhyRspack features={features} />
       </div>
     </section>
   );
@@ -109,7 +104,7 @@ const rsbuildFeatures = [
 
 export const WhyRspackStoryWithoutFirstCardAndLottie = () => {
   return (
-    <section className={containerStyle} key={title}>
+    <section className={containerStyle}>
       <div className={innerContainerStyle}>
         <WhyRspack features={rsbuildFeatures} />
       </div>
