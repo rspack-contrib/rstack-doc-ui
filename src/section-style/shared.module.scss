@@ -52,17 +52,21 @@
 // S
 @media screen and (max-width: 600px) {
   .container {
-    padding: 24px !important;
+    padding: 64px 24px 24px !important;
+
     .innerContainer {
       gap: 16px !important;
     }
   }
+
   .titleAndDesc {
     padding: 0px 16px !important;
     gap: 16px !important;
+
     .title {
       font-size: 24px !important;
     }
+
     .desc {
       font-size: 15px !important;
     }
