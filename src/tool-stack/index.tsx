@@ -73,8 +73,8 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
         <h1 className={titleStyle}>Rstack</h1>
         <p className={descStyle}>
           {isEn
-            ? 'A unified JavaScript toolchain built around Rspack, with consistent architecture and ultimate performance'
-            : '围绕 Rspack 打造的 JavaScript 统一工具链，一致的底层架构，极致的性能体验'}
+            ? 'A unified JavaScript toolchain built around Rspack, with high performance and consistent architecture'
+            : '围绕 Rspack 打造的 JavaScript 统一工具链，具有优秀的性能和一致的架构'}
         </p>
       </div>
       <div className={styles.tools}>
