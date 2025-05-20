@@ -7,11 +7,13 @@ export function Announcement({
   message,
   localStorageKey,
   display = true,
+  barClassName,
 }: {
   href: string;
-  message: string;
+  message: string | React.ReactNode;
   localStorageKey: string;
   display?: boolean;
+  barClassName?: string;
 }) {
   if (!display) {
     return null;
@@ -25,7 +27,7 @@ export function Announcement({
   }
 
   return (
-    <div className={styles.bar}>
+    <div className={`${styles.bar} ${barClassName}`}>
       <a href={href} className={styles.link}>
         {message}
       </a>
