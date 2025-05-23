@@ -45,7 +45,7 @@
         "descEn": "Testing framework",
         "logoScale": 0.95,
         "logo": "https://assets.rspack.dev/rstest/rstest-logo.svg",
-        "url": "https://github.com/web-infra-dev/rstest"
+        "url": "https://rstest.dev/"
       },
       {
         "name": "Awesome Rspack",

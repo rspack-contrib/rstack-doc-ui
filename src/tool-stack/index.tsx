@@ -62,8 +62,8 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
         ? 'An testing framework that provides first-class support for Rspack ecosystem'
         : '基于 Rspack 的测试框架，为 Rspack 生态提供全面、一流的支持',
       logo: 'https://assets.rspack.dev/rstest/rstest-logo.svg',
-      url: 'https://github.com/web-infra-dev/rstest',
-      urlText: 'web-infra-dev/rstest',
+      url: 'https://rstest.dev/',
+      urlText: 'rstest.dev',
     },
   ];
 
