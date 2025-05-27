@@ -29,7 +29,7 @@
         "desc": "库开发工具",
         "descEn": "Library development tool",
         "logo": "https://assets.rspack.dev/rslib/rslib-logo.svg",
-        "url": "https://lib.rsbuild.dev"
+        "url": "https://rslib.rs"
       },
       {
         "name": "Rsdoctor",
@@ -45,7 +45,7 @@
         "descEn": "Testing framework",
         "logoScale": 0.95,
         "logo": "https://assets.rspack.dev/rstest/rstest-logo.svg",
-        "url": "https://rstest.dev/"
+        "url": "https://rstest.rs/"
       },
       {
         "name": "Awesome Rspack",
