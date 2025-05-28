@@ -18,7 +18,7 @@ export const PopoverContent = ({
         className={style.title}
       >
         <img
-          src="https://assets.rspack.dev/web-infra/web-infra-logo.svg"
+          src="https://assets.rspack.rs/web-infra/web-infra-logo.svg"
           className={style.logo}
           alt="web-infra-logo"
         />

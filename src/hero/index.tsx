@@ -79,7 +79,7 @@ export const Hero: FC<HeroProps> = ({
   onClickLearnMore,
   showStars = false,
   showOvalBg = true,
-  logoUrl = 'https://assets.rspack.dev/rspack/rspack-logo.svg',
+  logoUrl = 'https://assets.rspack.rs/rspack/rspack-logo.svg',
   title = 'Rspack',
   subTitle = 'The fast Rust-based web bundler',
   description = 'Seamlessly replace webpack with compatible API',

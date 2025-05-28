@@ -62,7 +62,7 @@ export const BackgroundImage: FC<BackgroundProps> = ({
       </style>
       <img
         className={styles.background}
-        src="https://assets.rspack.dev/rspack/assets/landingpage-background-compressed.png"
+        src="https://assets.rspack.rs/rspack/assets/landingpage-background-compressed.png"
         alt="background"
       />
     </>

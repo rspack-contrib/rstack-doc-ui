@@ -16,25 +16,25 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
       desc: isEn
         ? 'A high performance JavaScript bundler written in Rust, with webpack-compatible API'
         : '基于 Rust 编写的高性能 JavaScript 打包工具，具备与 webpack 兼容的 API',
-      logo: 'https://assets.rspack.dev/rspack/rspack-logo.svg',
-      url: 'https://rspack.dev',
-      urlText: 'rspack.dev',
+      logo: 'https://assets.rspack.rs/rspack/rspack-logo.svg',
+      url: 'https://rspack.rs',
+      urlText: 'rspack.rs',
     },
     {
       name: 'Rsbuild',
       desc: isEn
         ? 'An Rspack-based build tool that provides out-of-the-box setup'
         : '基于 Rspack 的构建工具，包含开箱即用的预设配置，带来愉悦的开发体验',
-      logo: 'https://assets.rspack.dev/rsbuild/rsbuild-logo.svg',
-      url: 'https://rsbuild.dev',
-      urlText: 'rsbuild.dev',
+      logo: 'https://assets.rspack.rs/rsbuild/rsbuild-logo.svg',
+      url: 'https://rsbuild.rs',
+      urlText: 'rsbuild.rs',
     },
     {
       name: 'Rslib',
       desc: isEn
         ? 'A Rsbuild-based library development tool for creating libraries and UI components'
         : '基于 Rsbuild 的库开发工具，以简单的方式创建 JavaScript 库和 UI 组件库',
-      logo: 'https://assets.rspack.dev/rslib/rslib-logo.svg',
+      logo: 'https://assets.rspack.rs/rslib/rslib-logo.svg',
       url: 'https://rslib.rs',
       urlText: 'rslib.rs',
     },
@@ -43,25 +43,25 @@ export const ToolStack: React.FC<{ lang: string }> = memo(({ lang }) => {
       desc: isEn
         ? 'An Rsbuild-based static site generator for creating documentation sites'
         : '基于 Rsbuild 的静态站点生成器，用于创建优雅的文档站点',
-      logo: 'https://assets.rspack.dev/rspress/rspress-logo-480x480.png',
-      url: 'https://rspress.dev',
-      urlText: 'rspress.dev',
+      logo: 'https://assets.rspack.rs/rspress/rspress-logo-480x480.png',
+      url: 'https://rspress.rs',
+      urlText: 'rspress.rs',
     },
     {
       name: 'Rsdoctor',
       desc: isEn
         ? 'A one-stop build analyzer that makes the build process transparent'
         : '一站式的构建分析工具，使构建流程变得透明、可预测和可优化',
-      logo: 'https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png',
-      url: 'https://rsdoctor.dev',
-      urlText: 'rsdoctor.dev',
+      logo: 'https://assets.rspack.rs/rsdoctor/rsdoctor-logo-480x480.png',
+      url: 'https://rsdoctor.rs',
+      urlText: 'rsdoctor.rs',
     },
     {
       name: 'Rstest',
       desc: isEn
         ? 'An testing framework that provides first-class support for Rspack ecosystem'
         : '基于 Rspack 的测试框架，为 Rspack 生态提供全面、一流的支持',
-      logo: 'https://assets.rspack.dev/rstest/rstest-logo.svg',
+      logo: 'https://assets.rspack.rs/rstest/rstest-logo.svg',
       url: 'https://rstest.rs/',
       urlText: 'rstest.rs',
     },

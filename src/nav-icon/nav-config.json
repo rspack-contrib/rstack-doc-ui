@@ -7,28 +7,28 @@
         "name": "Rspack",
         "desc": "高性能打包工具",
         "descEn": "High-performance bundler",
-        "logo": "https://assets.rspack.dev/rspack/rspack-logo.svg",
-        "url": "https://rspack.dev"
+        "logo": "https://assets.rspack.rs/rspack/rspack-logo.svg",
+        "url": "https://rspack.rs"
       },
       {
         "name": "Rsbuild",
         "desc": "开箱即用的构建工具",
         "descEn": "Out-of-the-box build tool",
-        "logo": "https://assets.rspack.dev/rsbuild/rsbuild-logo.svg",
-        "url": "https://rsbuild.dev"
+        "logo": "https://assets.rspack.rs/rsbuild/rsbuild-logo.svg",
+        "url": "https://rsbuild.rs"
       },
       {
         "name": "Rspress",
         "desc": "静态站点生成器",
         "descEn": "Static site generator",
-        "logo": "https://assets.rspack.dev/rspress/rspress-logo-480x480.png",
-        "url": "https://rspress.dev"
+        "logo": "https://assets.rspack.rs/rspress/rspress-logo-480x480.png",
+        "url": "https://rspress.rs"
       },
       {
         "name": "Rslib",
         "desc": "库开发工具",
         "descEn": "Library development tool",
-        "logo": "https://assets.rspack.dev/rslib/rslib-logo.svg",
+        "logo": "https://assets.rspack.rs/rslib/rslib-logo.svg",
         "url": "https://rslib.rs"
       },
       {
@@ -36,22 +36,22 @@
         "desc": "构建分析工具",
         "descEn": "Build analyzer",
         "logoScale": 0.95,
-        "logo": "https://assets.rspack.dev/rsdoctor/rsdoctor-logo-480x480.png",
-        "url": "https://rsdoctor.dev"
+        "logo": "https://assets.rspack.rs/rsdoctor/rsdoctor-logo-480x480.png",
+        "url": "https://rsdoctor.rs"
       },
       {
         "name": "Rstest",
         "desc": "测试框架",
         "descEn": "Testing framework",
         "logoScale": 0.95,
-        "logo": "https://assets.rspack.dev/rstest/rstest-logo.svg",
+        "logo": "https://assets.rspack.rs/rstest/rstest-logo.svg",
         "url": "https://rstest.rs/"
       },
       {
         "name": "Awesome Rspack",
         "desc": "探索 Rspack 生态",
         "descEn": "Explore Rspack ecosystem",
-        "logo": "https://assets.rspack.dev/others/assets/awesome-rspack.png",
+        "logo": "https://assets.rspack.rs/others/assets/awesome-rspack.png",
         "url": "https://github.com/web-infra-dev/awesome-rspack"
       }
     ]
