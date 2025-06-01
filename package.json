@@ -4,7 +4,7 @@
   "type": "module",
   "types": "./dist/index.d.ts",
   "license": "MIT",
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "exports": {
     "./nav-icon": {
       "types": "./dist/nav-icon/index.d.ts",
@@ -70,7 +70,7 @@
     "bump": "npx bumpp"
   },
   "dependencies": {
-    "framer-motion": "^12.9.2"
+    "framer-motion": "^12.15.0"
   },
   "nano-staged": {
     "*.{md,mdx,json,css,less,scss}": "prettier --write",
@@ -84,30 +84,30 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@rsbuild/plugin-react": "1.3.0",
+    "@rsbuild/plugin-react": "1.3.1",
     "@rsbuild/plugin-sass": "1.3.1",
-    "@rslib/core": "^0.6.8",
+    "@rslib/core": "^0.9.1",
     "@rstack-dev/doc-ui": "workspace:*",
-    "@storybook/addon-essentials": "^8.6.12",
-    "@storybook/addon-themes": "^8.6.12",
-    "@storybook/react": "^8.6.12",
-    "@storybook/test": "^8.6.12",
-    "@types/node": "~22.15.3",
-    "@types/react": "^18.3.20",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-themes": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@types/node": "~22.15.29",
+    "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
-    "antd": "^5.24.9",
-    "execa": "9.5.2",
+    "antd": "^5.25.4",
+    "execa": "9.6.0",
     "fs-extra": "11.3.0",
-    "lottie-web": "5.12.2",
+    "lottie-web": "5.13.0",
     "nano-staged": "^0.8.0",
     "prettier": "~3.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.16.0",
     "rimraf": "~6.0.1",
-    "semver": "7.7.1",
+    "semver": "7.7.2",
     "simple-git-hooks": "^2.13.0",
-    "storybook": "^8.6.12",
+    "storybook": "^8.6.14",
     "storybook-addon-rslib": "^1.0.1",
     "storybook-react-rsbuild": "1.0.1",
     "typescript": "~5.8.3"
