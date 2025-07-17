@@ -5,8 +5,8 @@
   --rp-c-bg: #fff;
 }
 .rspress-nav {
-transition: background 0.4s;
+  transition: background 0.4s;
 }
 body:not(.notTopArrived) .rspress-nav {
-background: transparent !important;
+  background: transparent !important;
 }
