@@ -2,6 +2,13 @@
 
 Shared UI components for the Rstack websites.
 
+- <http://rspack.rs>
+- <http://rsbuild.rs>
+- <http://rspress.rs>
+- <http://rsdoctor.rs>
+- <http://rslib.rs>
+- <http://rstest.rs>
+
 > This package should only be used in Rstack projects.
 
 ## Example
