@@ -1,6 +1,5 @@
 import { type FC, useEffect, useState } from 'react';
 import styles from './index.module.scss';
-import './global.scss';
 
 const useTopArrived = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -45,10 +44,18 @@ export const BackgroundImage: FC<BackgroundProps> = ({
   }, [topArrived, navBarTopArrived]);
 
   return (
-    <img
-      className={styles.background}
-      src="https://assets.rspack.rs/rspack/assets/landingpage-background-compressed.png"
-      alt="background"
-    />
+    <>
+      {/* For transparent navbar, overrides css only in homepage, and unmounted in other pages */}
+      <style>
+        {
+          ':root {--rp-c-bg: #0b0c0e;}:root:not(.dark) {--rp-c-bg: #fff;}.rspress-nav {transition: background 0.4s;}body:not(.notTopArrived) .rspress-nav {background: transparent !important;}'
+        }
+      </style>
+      <img
+        className={styles.background}
+        src="https://assets.rspack.rs/rspack/assets/landingpage-background-compressed.png"
+        alt="background"
+      />
+    </>
   );
 };
