@@ -6,14 +6,14 @@
       {
         "name": "Rspack",
         "desc": "高性能打包工具",
-        "descEn": "High-performance bundler",
+        "descEn": "Bundler",
         "logo": "https://assets.rspack.rs/rspack/rspack-logo.svg",
         "url": "https://rspack.rs"
       },
       {
         "name": "Rsbuild",
         "desc": "开箱即用的构建工具",
-        "descEn": "Out-of-the-box build tool",
+        "descEn": "Build tool",
         "logo": "https://assets.rspack.rs/rsbuild/rsbuild-logo.svg",
         "url": "https://rsbuild.rs"
       },
@@ -48,9 +48,17 @@
         "url": "https://rstest.rs/"
       },
       {
-        "name": "Awesome Rspack",
-        "desc": "探索 Rspack 生态",
-        "descEn": "Explore Rspack ecosystem",
+        "name": "Rslint",
+        "desc": "代码检查工具",
+        "descEn": "Linter",
+        "logoScale": 0.95,
+        "logo": "https://assets.rspack.rs/rslint/rslint-logo.svg",
+        "url": "https://rslint.rs/"
+      },
+      {
+        "name": "Awesome Rstack",
+        "desc": "探索 Rstack 生态",
+        "descEn": "Explore Rstack ecosystem",
         "logo": "https://assets.rspack.rs/others/assets/awesome-rspack.png",
         "url": "https://github.com/web-infra-dev/awesome-rspack"
       }
