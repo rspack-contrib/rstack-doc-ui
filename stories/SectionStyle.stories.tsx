@@ -19,9 +19,9 @@ const sections = [
       'Launched as a drop-in replacement for webpack, with more powerful features and exceptional productivity.',
   },
   {
-    title: 'Tool Stack',
+    title: 'Rstack',
     description:
-      'High-performance tool stack built around Rspack to boost modern web development',
+      'High-performance toolchain centered on Rspack to boost modern web development',
   },
 ];
 
