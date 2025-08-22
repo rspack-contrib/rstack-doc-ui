@@ -8,6 +8,7 @@ Shared UI components for the Rstack websites.
 - <http://rsdoctor.rs>
 - <http://rslib.rs>
 - <http://rstest.rs>
+- <http://rslint.rs>
 
 > This package should only be used in Rstack projects.
 
