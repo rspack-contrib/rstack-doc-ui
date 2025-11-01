@@ -90,7 +90,7 @@
     "@rstack-dev/doc-ui": "workspace:*",
     "@storybook/addon-themes": "^9.1.9",
     "@storybook/react": "^9.1.9",
-    "@types/node": "~22.18.8",
+    "@types/node": "~24.9.2",
     "@types/react": "^18.3.25",
     "@types/react-dom": "^18.3.7",
     "antd": "^5.27.4",
