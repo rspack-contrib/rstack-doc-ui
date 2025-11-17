@@ -47,9 +47,8 @@ export const BackgroundImage: FC<BackgroundProps> = ({
     <>
       {/* For transparent navbar, overrides css only in homepage, and unmounted in other pages */}
       <style>
-        {
-          ':root {--rp-c-bg: #0b0c0e;}:root:not(.dark) {--rp-c-bg: #fff;}.rspress-nav {transition: background 0.4s;}body:not(.notTopArrived) .rspress-nav {background: transparent !important;}'
-        }
+        {'body:not(.notTopArrived) .rp-nav {background: transparent !important; border-bottom: none !important;}' +
+          '.rp-nav {background: color-mix(in srgb,var(--rp-c-bg) 60%,transparent);backdrop-filter: blur(25px);-webkit-backdrop-filter: blur(25px);}'}
       </style>
       <img
         className={styles.background}
