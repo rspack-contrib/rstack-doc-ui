@@ -82,8 +82,8 @@ importers:
         specifier: ^10.1.2
         version: 10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       storybook-addon-rslib:
-        specifier: ^2.1.6
-        version: 2.1.6(@rsbuild/core@1.6.10)(@rslib/core@0.18.2(typescript@5.9.3))(storybook-builder-rsbuild@2.1.6(@rsbuild/core@1.6.10)(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^3.1.0
+        version: 3.1.0(@rsbuild/core@1.6.10)(@rslib/core@0.18.2(typescript@5.9.3))(storybook-builder-rsbuild@2.1.6(@rsbuild/core@1.6.10)(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3))(typescript@5.9.3)
       storybook-react-rsbuild:
         specifier: ^2.1.6
         version: 2.1.6(@rsbuild/core@1.6.10)(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(webpack@5.96.1)
@@ -2437,8 +2437,8 @@ packages:
   stackframe@1.3.4:
     resolution: {integrity: sha512-oeVtt7eWQS+Na6F//S4kJ2K2VbRlS9D43mAlMyVpVWovy9o+jfgH8O9agzANzaiLjclA0oYzUXEM4PurhSUChw==}
 
-  storybook-addon-rslib@2.1.6:
-    resolution: {integrity: sha512-QvmRMGgVQdD6jK6yyGQUUuqvRZ2/aq2dn0IMox/ivrg0zmwA9LEc48LgmzIwykjCsRmu2h/6Pz5Fjps9j5BANg==}
+  storybook-addon-rslib@3.1.0:
+    resolution: {integrity: sha512-Y5CumZm7HfrakShM9slsQeF+IPBONf/duS5fTRzGGlKZefI6k394S4NzjpvL1DuWYEumoJ+VzFPbpGNlniM6tg==}
     peerDependencies:
       '@rsbuild/core': ^1.5.0
       '@rslib/core': '>= 0.1.1 || >= 0.2'
@@ -5170,7 +5170,7 @@ snapshots:
 
   stackframe@1.3.4: {}
 
-  storybook-addon-rslib@2.1.6(@rsbuild/core@1.6.10)(@rslib/core@0.18.2(typescript@5.9.3))(storybook-builder-rsbuild@2.1.6(@rsbuild/core@1.6.10)(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3))(typescript@5.9.3):
+  storybook-addon-rslib@3.1.0(@rsbuild/core@1.6.10)(@rslib/core@0.18.2(typescript@5.9.3))(storybook-builder-rsbuild@2.1.6(@rsbuild/core@1.6.10)(@rspack/core@1.6.5(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.1.2(@testing-library/dom@10.4.0)(prettier@3.7.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       '@rsbuild/core': 1.6.10
       '@rslib/core': 0.18.2(typescript@5.9.3)
@@ -5287,7 +5287,7 @@ snapshots:
 
   terser-webpack-plugin@5.3.10(webpack@5.96.1):
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2

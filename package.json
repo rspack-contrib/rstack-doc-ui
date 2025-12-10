@@ -106,7 +106,7 @@
     "semver": "7.7.3",
     "simple-git-hooks": "^2.13.1",
     "storybook": "^10.1.2",
-    "storybook-addon-rslib": "^2.1.6",
+    "storybook-addon-rslib": "^3.1.0",
     "storybook-react-rsbuild": "^2.1.6",
     "typescript": "~5.9.3"
   },
