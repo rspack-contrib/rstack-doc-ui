@@ -4,7 +4,7 @@
   "type": "module",
   "types": "./dist/index.d.ts",
   "license": "MIT",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "exports": {
     "./nav-icon": {
       "types": "./dist/nav-icon/index.d.ts",
@@ -70,7 +70,7 @@
     "bump": "npx bumpp"
   },
   "dependencies": {
-    "framer-motion": "^12.23.24"
+    "framer-motion": "^12.23.25"
   },
   "nano-staged": {
     "*.{md,mdx,json,css,less,scss}": "prettier --write",
@@ -86,11 +86,11 @@
     "@biomejs/biome": "1.9.4",
     "@rsbuild/plugin-react": "1.4.2",
     "@rsbuild/plugin-sass": "1.4.0",
-    "@rslib/core": "^0.18.2",
+    "@rslib/core": "^0.18.4",
     "@rstack-dev/doc-ui": "workspace:*",
-    "@storybook/addon-themes": "^10.1.2",
-    "@storybook/react": "^10.1.2",
-    "@types/node": "~24.10.1",
+    "@storybook/addon-themes": "^10.1.5",
+    "@storybook/react": "^10.1.5",
+    "@types/node": "~24.10.2",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "antd": "^5.29.1",
@@ -98,14 +98,14 @@
     "fs-extra": "11.3.2",
     "lottie-web": "5.13.0",
     "nano-staged": "^0.9.0",
-    "prettier": "~3.7.3",
+    "prettier": "~3.7.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^10.0.0",
     "rimraf": "~6.1.2",
     "semver": "7.7.3",
     "simple-git-hooks": "^2.13.1",
-    "storybook": "^10.1.2",
+    "storybook": "^10.1.5",
     "storybook-addon-rslib": "^3.1.0",
     "storybook-react-rsbuild": "^3.1.0",
     "typescript": "~5.9.3"
