@@ -21,7 +21,7 @@ export const HeroStory = () => {
         />
         <Hero
           showStars
-          githubURL="https://github.com/rspack-contrib/rstack-doc-ui"
+          githubURL="https://github.com/rstackjs/rstack-doc-ui"
           onClickLearnMore={handleClickLearnMore}
           onClickGetStarted={handleClickGetStarted}
         />

@@ -3,7 +3,7 @@ import './index.scss';
 
 // Benchmark data for different cases
 // Unit: second
-// From: https://github.com/rspack-contrib/performance-compare
+// From: https://github.com/rstackjs/performance-compare
 const BENCHMARK_DATA = {
   foo: {
     label: 'Foo',
