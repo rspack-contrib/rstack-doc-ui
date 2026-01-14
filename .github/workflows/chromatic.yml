@@ -1,0 +1,51 @@
+# Chromatic Visual Regression Testing
+# https://www.chromatic.com/docs/github-actions/
+
+name: Chromatic
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  chromatic:
+    name: Run Chromatic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Install Pnpm
+        run: npm install -g corepack@latest --force && corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.11.1
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Storybook
+        run: pnpm run build-storybook
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          # Use the pre-built Storybook
+          storybookBuildDir: storybook-static
+          # Auto accept changes on main branch (for squash/rebase merge)
+          autoAcceptChanges: main
+          # Don't fail CI when there are visual changes - require review in Chromatic UI
+          exitZeroOnChanges: true
+          # Skip builds for dependabot/renovate branches
+          skip: '@(renovate/**|dependabot/**)'

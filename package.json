@@ -67,7 +67,8 @@
     "build:watch": "rslib build -w",
     "lint": "biome check",
     "lint:fix": "biome check --write --unsafe",
-    "bump": "npx bumpp"
+    "bump": "npx bumpp",
+    "chromatic": "chromatic"
   },
   "dependencies": {
     "framer-motion": "^12.23.25"
@@ -90,10 +91,12 @@
     "@rstack-dev/doc-ui": "workspace:*",
     "@storybook/addon-themes": "^10.1.5",
     "@storybook/react": "^10.1.5",
+    "@storybook/test": "9.0.0-alpha.2",
     "@types/node": "~24.10.2",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "antd": "^6.1.0",
+    "chromatic": "^13.3.5",
     "execa": "9.6.1",
     "fs-extra": "11.3.2",
     "lottie-web": "5.13.0",
