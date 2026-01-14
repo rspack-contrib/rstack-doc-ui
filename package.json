@@ -1,6 +1,6 @@
 {
   "name": "@rstack-dev/doc-ui",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "type": "module",
   "types": "./dist/index.d.ts",
   "license": "MIT",
